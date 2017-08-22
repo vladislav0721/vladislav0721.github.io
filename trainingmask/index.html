@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Тренировочная маска 2.0 - имитация тренировки в высокогорье</title>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hint.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Owl Carousel Assets -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ec1c24">
+  </head>
+  <body>
+    <div class="container1 container-fluid">
+        <div class="container">
+            <div class="row">
+                <header class="header">
+                    <div class="headerlogo col-md-2 col-sm-3 col-xs-5">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="headertxt col-md-2 col-sm-3 col-xs-7">
+                        <img src="img/logotext.png" alt="logotxt">
+                        <p class="mob-hidden">Имитация тренировки в высокогорье</p>
+                    </div>
+                    <div class="delivery col-md-3 hidden-sm hidden-xs">
+                        <p>Доставка по всему Казахстану</p>
+                        <select class="cityselect">
+                            <option disabled="Выбрать город" selected="">Выбрать город</option>
+                            <option>Алматы</option>
+                            <option>Астана</option>
+                            <option>Шымкент</option>
+                            <option>Караганда</option>
+                            <option>Тараз</option>
+                            <option>Талдыкорган</option>
+                            <option>Усть-Каменогорск</option>
+                            <option>Семипалатинск</option>
+                            <option>Жезказган</option>
+                            <option>Павлодар</option>
+                            <option>Кокшетау</option>
+                            <option>Петропавловск</option>
+                            <option>Актюбинск</option>
+                            <option>Уральск</option>
+                        </select>
+                    </div>
+                    <div class="hdadres col-md-3 hidden-sm hidden-xs ">
+                        <p><i class="fa fa-map-marker"></i>г.Алматы, ул.Шарипова 124</p>
+                        <p><i class="fa fa-map-marker"></i>г.Астана ул.Майлина 10</p>
+                    </div>
+                    <div class="hdtell col-md-2 col-sm-3 hidden-xs pull-right">
+                        <p><i class=""></i></p>
+                        <p><i class=""></i></p>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+    <div class="container1nav container-fluid">
+        <div class="container">
+            <div class="row">
+                <nav class="nav col-md-9 col-sm-9 col-xs-6">
+                    <ul>
+                        <li class="current"><i class="fa fa-bars"></i>Меню</li>
+                        <li><a href="#description">Описание</a></li>
+                        <li><a href="#instructions">Инструкция</a></li>
+                        <li><a href="#client">Фото</a></li>
+                        <li><a for="Modalpartners" data-toggle="modal" data-target="#Modalpartners" href="">Партнерам</a></li>
+                    </ul>
+                </nav>
+                <div class="btncall col-md-2 col-sm-3 col-xs-6 pull-right">
+                    <label for="modal-zakaz" class="form-zakaz"type="button" data-toggle="modal" data-target="#ModalZvonok1">Перезвоните мне</label>
+                    <a class="callmobi" data-toggle="modal" data-target="#ModalZvonok1" for="modal-zakaz" href="">Перезвоните мне</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container1-bg">
+        <div class="videorel">
+            <div class="title-1">
+                <h1>ТРЕНИРОВОЧНАЯ МАСКА <span>2.0</span></h1>
+            </div>
+            <div class="subtitle1">
+                <h2>Тренировочная маска имитирующая условия тренировки в Альпах</h2>
+            </div>
+            <div class="videobg mob-hidden">
+                <video autoplay="" loop="" poster="./img/bg1.jpg" id="bgvid">
+                <source src="./video/trainingmask.webm" type="video/webm">
+                <source src=".video/trainingmask.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <div class="container2 containerfluid" id="description">
+        <div class="container">
+            <div class="row">
+                <div class="videopresen col-md-6 col-sm-12 col-xs-12 center-block">
+                    <p>УВЕЛИЧЬТЕ ЭФФЕКТИВНОСТЬ СВОИХ ТРЕНИРОВОК</p>
+                    <div>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/04cXLklCgpk"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="maskpresen col-md-6 col-sm-12 col-xs-12">
+                    <div class="imgpresen">
+                        <div class="interactive-mask hidden-sm">
+                            <div class="kachestvo mob-hidden">
+                                <p>Гарантия качества</p>
+                                <img src="./img/arrowkachestvo.png">
+                            </div>
+                            <img class="mob-hidden in-mask" src="./img/traningmask.png" alt="">
+                            <span class="hint--bottom interactive-dot fixing mob-hidden" data-tooltip data-tooltip-label="НАДЕЖНАЯ ФИКСАЦИЯ" data-tooltip-message="Специальные ушные отверстия даже при экстримальных тренировках надежно фиксирует маску"></span>
+                            <span class="hint--bottom interactive-dot size mob-hidden" data-tooltip data-tooltip-label="3 ДОСТУПНЫХ РАЗМЕРА" data-tooltip-message="Для разных весовых категорий: малый(S), средний(M) и больших(L)"></span>
+                            <span class="hint--bottom interactive-dot coating mob-hidden" data-tooltip data-tooltip-label="НЕОПРЕНОВОЕ ПОКРЫТИЕ" data-tooltip-message="Износостойковое моющееся покрытие доступны различные цветовые решения"></span>
+                            <span class="hint--bottom interactive-dot resist mob-hidden" data-tooltip data-tooltip-label="КЛАПАНЫ СОПРОТИВЛЕНИЯ" data-tooltip-message="Позволяют регулировать сопротивление воздуха и нагрузку на легкие"></span>
+                        </div>
+                        <p>
+                        Elevation Training Mask 2.0 это запатентованный тренажер 
+                        сопротивления дыханию, который помогает сделать ваши легкие 
+                        сильнее за счет сопротивления при вдохах и выдохах.<br><br>
+
+                        Elevation Training Mask сделает ваши тренировки более эффективными, 
+                        сократив время тренировки с 60 до 20 минут.
+                        </p>
+                    </div>
+                </div>
+                <div class="formazakaz col-md-12 col-sm-12 col-xs-12">
+                    <div class="formaz ">
+                        <div class="lenta clearfix"><p>Закажите маску</p></div>
+                        <div class="surprise col-md-7 col-sm-6 col-xs-12">
+                            <p>ПОЛУЧИ СВОЮ ТРЕНИРОВОЧНУЮ МАСКУ ЗА <span>15 900 тенге</span></p>
+                            <img src="./img/traningmask.png" alt="">
+                        </div>
+                        <div class="form col-md-5 col-sm-6 col-xs-12">
+                            <div class="titleform"><p>Оставьте заявку и с вами свяжется 
+                            наш менеджер:</p></div>
+                            <div class="f-1">
+                                <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                                    <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                                    <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                                    <input class="applicationButton_form" type="submit" value="ПОЛУЧИТЬ ПОДАРОК" name="submit"/>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container3" id="instructions">
+        <div class="container">
+            <div class="row">
+                <div class="effect-block col-md-8 col-sm-12 col-xs-12">
+                    <div class="lenta-sprite-left"></div>
+                    <div class="effect-title">
+                        <p>Эффект<br>использования<br>тренировочной маски <span>2.0</span></p>
+                    </div>
+                    <div class="underline-red"></div>
+                    <div class="effect-text">
+                        <p>
+                        Тренировочная маска 2.0 является тренажером для дыхания и регулирования потока воздуха 
+                        подаваемый в Ваше тело. 
+                        </p>
+                        <p>
+                        С помощью маски создается сопротивление потоку воздуха через поточные клапаны.
+                        </p>
+                        <p>
+                        Когда Ваш организм адаптируется к тренировки с ограничением потока кислорода, легкие 
+                        будут обучены делать глубокие вдохи, что бы использовать кислород более эффективно. 
+                        </p>
+                    </div>
+                    <div class="lenta-sprite-right"></div>
+                </div>
+                <div class="effect-photo col-md-5 hidden-sm hidden-xs pull-right">
+                    <div class="scale-left"><img src="./img/scale.png"></div>
+                    <img src="./img/run.png">
+                    <div class="scale-right"><img src="./img/scale.png"></div>
+                </div>
+                <div class="title-needed col-md-12 col-sm-12 col-xs-12">
+                    <h1>Для чего нужна маска?</h1>
+                    <div class="underline-red-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container4">
+        <div class="container">
+            <div class="row">
+                <div class="useful">
+                    <div class="effect-strength col-md-6 col-sm-6 col-xs-6">
+                        <div class="pull-right mobileft">
+                            <p>Увеличение  физической выносливости</p>
+                            <i class="strength-ico useful-ico"></i>
+                        </div>
+                    </div>
+                    <div class="effect-brain col-md-6 col-sm-6 col-xs-6">
+                        <div class="pull-left mobileft">
+                            <i class="brain-ico useful-ico"></i>
+                            <p>Увеличение умственной выносливости</p>
+                        </div>
+                    </div>
+                    <div class="effect-lungs col-md-6 col-sm-6 col-xs-6">
+                        <div class="pull-right mobileft">
+                            <p>Увеличение емкости легких и тренировка диафрагмы</p>
+                            <i class="lungs-ico useful-ico"></i>
+                        </div>
+                    </div>
+                    <div class="effect-oxygen col-md-6 col-sm-6 col-xs-6">
+                        <div class="pull-left mobileft">
+                            <i class="oxygen-ico useful-ico"></i>
+                            <p>Увеличение эффективности использования организмом кислорода</p>
+                        </div>
+                    </div>
+                    <div class="effect-heart col-md-6 col-sm-6 col-xs-6">
+                        <div class="pull-right mobileft">
+                            <p>Увеличение анаэробного порога</p>
+                            <i class="heart-ico useful-ico"></i>
+                        </div>
+                    </div>
+                    <div class="effect-efficiency col-md-6 col-sm-6 col-xs-6">
+                        <div class="pull-left mobileft">
+                            <i class="efficiency-ico useful-ico"></i>
+                            <p>Повышение общей эффективности</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container5">
+        <div class="container">
+            <div class="row">
+                <div class="title-cont5 col-md-12 col-sx-12">
+                    <h1>УВЕЛИЧЬ СВОЮ ПРОИЗВОДИТЕЛЬНОСТЬ!</h1>
+                </div>
+                <div class="discipline col-md-12 col-sm-12">
+                    <div class="col-md-4 col-sm-3 col-xs-8">
+                        <div class="center-block w100">
+                        <p><i class="fa fa-circle-thin"></i>Бег</p>
+                        <p><i class="fa fa-circle-thin"></i>Легкая атлетика</p>
+                        <p><i class="fa fa-circle-thin"></i>Экстрим</p>
+                        <p><i class="fa fa-circle-thin"></i>Зумба</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">
+                        <p><i class="fa fa-circle-thin"></i>Баскетбол</p>
+                        <p><i class="fa fa-circle-thin"></i>Футбол</p>
+                        <p><i class="fa fa-circle-thin"></i>Йога</p>
+                        <p><i class="fa fa-circle-thin"></i>Бокс</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-8">
+                        <p><i class="fa fa-circle-thin"></i>Танцы</p>
+                        <p><i class="fa fa-circle-thin"></i>Велоспорт</p>
+                        <p><i class="fa fa-circle-thin"></i>Борьба</p>
+                        <p class="mob-hidden"><i class="fa fa-circle-thin"></i>Cмешанные единоборства</p>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-4">
+                        <p><i class="fa fa-circle-thin"></i>Хоккей</p>
+                        <p><i class="fa fa-circle-thin"></i>Кроссфит</p>
+                        <p class="mob-hidden"><i class="fa fa-circle-thin"></i>Лыжный спорт</p>
+                        <p><i class="fa fa-circle-thin"></i>Фитнес</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container6">
+        <div class="container">
+            <div class="row">
+                <div class="grafic-txt1 col-md-8 col-sm-12 hidden-sx ">
+                    <p>График эффективности тренировок:</p>
+                </div>
+                <div class="without col-md-2 col-sm-4 hidden-sx">
+                    <p>Без маски<i class="without-ico"></i></p>
+                </div>
+                <div class="frommask col-md-2 col-sm-4 hidden-sx">
+                    <p>С Training Mask 2.0<i class="frommask-ico"></i></p>
+                </div>
+                <div class="schedule-block col-md-12">
+                    <div class="col-md-10">
+                        <img src="./img/graf.png">
+                    </div>
+                    <div class="withmask-txt col-md-2">
+                        <p>увеличение эффективности в 3 раза</p>
+                    </div>
+                    <div class="outmask">
+                        <p>X</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container7">
+        <div class="container">
+            <div class="row">
+                <div class="formazakaz-1 col-md-12 col-sm-12 col-xs-12">
+                    <div class="formaz-1">
+                        <div class="get-mask col-md-7 col-sm-6">
+                            <p>ПОЛУЧИ СВОЮ ТРЕНИРОВОЧНУЮ МАСКУ</p>
+                            <img src="./img/traningmask.png" alt="">
+                        </div>
+                        <div class="form col-md-5 col-sm-6 col-xs-12">
+                            <div class="form-title7">
+                                <p>15 900 тенге</p>
+                            </div>
+                            <div class="filter-form">
+                                <p>Ваш размер:</p>
+                                <select class="cityselect">
+                                    <option disabled="Выбрать город" selected="">Выберете размер</option>
+                                    <option>S - Маленький 65 кг</option>
+                                    <option>M - Средний 75-100кг</option>
+                                    <option>L - Большой 100кг ></option>
+                                </select>
+                                <p>Количество:</p>
+                                <select class="cityselect">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>Больше</option>
+                                </select>
+                                <label for="ModalZvonok" class="form-zakaz1"type="button" data-toggle="modal" data-target="#ModalZvonok">ЗАКАЗАТЬ</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arranged col-md-12 sm-hidden">
+                	<div class="title-needed col-md-12 hidden-sm hidden-xs">
+                		<h1>КАК ОНА УСТРОЕНА?</h1>
+                		<div class="underline-white"></div>
+                	</div>
+                	<div class="arrange-block col-lg-12 col-md-12 hidden-sm hidden-xs">
+						<div class="col-lg-12 col-md-12">
+						<div class="arrange-col-left arrange-txt1 col-lg-4 col-lg-offset-1 col-md-6 col-md-offset-0">
+							<span>НАДЕЖНО КРЕПИТСЯ</span>
+							<p>При помощи специальных отверстий 
+								   для ушей,даже во время самых 
+								   интенсивных тренировок Training Mask 2.0 
+								   останется надежно закреплена
+							</p>
+							<div class="arrange-pointer-1"></div>
+						</div>
+						<div class="arrange-col-right arrange-txt2 col-lg-4 col-lg-offset-3 col-md-6 col-md-offset-0">
+							<span>СПЕЦИАЛЬНОЕ ПОКРЫТИЕ</span>
+							<p>
+								Надежное моющееся покрытие создает необходимое воздухонепроницаемое уплотнение. Доступны различные цветовые и стиливые решения!
+							</p>
+							<div class="arrange-pointer-2"></div>
+						</div>
+						</div>
+						<div class="arrange-block-2 col-lg-12 col-md-12">
+							<div class="arrange-col-left arrange-txt1 col-lg-4 col-lg-offset-1 col-md-6">
+							<span>3 РАЗНЫХ РАЗМЕРА</span>
+							<p>
+								Доступны Малый,Средний и
+								Большой размеры.Для тренировок
+								с любым размером головы!
+							</p>
+							<div class="arrange-pointer-3"></div>
+							</div>
+							<div class="arrange-col-right arrange-txt2 col-lg-4 col-lg-offset-3 col-md-6">
+							<span>КЛАПАНЫ СОПРОТИВЛЕНИЯ</span>
+							<p>
+								Тренируй свою диафрагму благодаря клапанам
+								сопротивления Training Mask 2.0. Пробежать
+								3 км пока еще тяжело? Начни с 500 метров
+								и двигайся вперед!
+							</p>
+							<div class="arrange-pointer-4"></div>
+							</div>
+						</div>
+					</div>
+                	</div>
+                </div>
+                <div class="title-needed col-md-12 hidden-sm hidden-xs">
+                	<h1>КЛАПАНЫ</h1>
+                	<div class="underline-white valves-line"></div>
+                </div>
+                <div class="valves col-lg-12 col-md-12 hidden-sm hidden-xs">
+                	<div class="col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-0 hidden-sm hidden-xs">
+                		<div class="valve-1">
+                			<span>Переменное сопротивление</span>
+                			<p>
+                			Колпачки позволяют изменять сопротивление, 
+							исходя из построения силовой или тренировки 
+							на выносливость.
+							</p>
+							<div class="valve-pointer-1"></div>
+                		</div>
+                	</div>
+                	<div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
+                		<div class="valve-2">
+                			<span>Клапан регулировки входного потока воздуха</span>
+                			<p>Быстрое увеличение сопротивления 
+							воздухозаборников для имитирования 
+							тренировки на высоте.</p>
+							<div class="valve-pointer-2"></div>
+                		</div>
+                	</div>
+                	<div class="col-lg-12 col-md-12">
+                		<div class="valve-3">
+                			<span>Переключения интенсивности</span>
+                			<p>Мобильность колпачков позволяет 
+							настраивать сопротивление на ходу. 
+							Вдохни новую жизнь в обычные тренировки, 
+							чтобы усталость и длительная подготовка ушли в
+							прошлое.</p>
+							<div class="valve-pointer-3"></div>
+                		</div>
+                	</div>
+                	<div class="col-lg-12 col-md-12">
+                		<div class="valve-4">
+                			<span>От 900 до 5500 метров</span>
+                			<p>Каждая маска 2.0 имеет 7 колпачков сопротивления
+							и 3 проточных клапана, позволяющих увеличивать 
+							высоту,что позволит увеличить емкость легких и 
+							эффективность кислорода.</p>
+							<div class="valve-pointer-4"></div>
+                		</div>
+                	</div>
+                </div>
+                <div class="whyuse-title col-md-12 col-xs-12">
+                    <p>КАК ИСПОЛЬЗОВАТЬ МАСКУ?</p>
+                    <div class="underline-white"></div>
+                    <div class="use-video col-md-8 col-xs-12 center-block">
+                        <div class="videowrapper">
+                            <div class="embed-responsive embed-responsive-16by9 ">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RhRY9CIn-oA" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container8">
+        <div class="container">
+            <div class="row">
+                <div class="partners-title col-md-12 col-sm-12 col-xs-12">
+                    <h1>НАШИ КЛИЕНТЫ</h1>
+                    <div class="underline-black"></div>
+                </div>
+                <div class="logo-partners col-md-12">
+                    <div class="worldclass-logo col-md-4 col-sm-4 col-xs-6 txt-center">
+                        <div class="img-center center-worldclass">
+                            <img src="./img/logopartners/worldclass.png" alt="">
+                        </div>
+                        <p>Worldclass</p>
+                    </div>
+                    <div class="astanaarlans-logo col-md-4 col-sm-4 col-xs-6 txt-center">
+                        <div class="img-center center-astanaarlans">
+                            <img src="./img/logopartners/astanaarlans.png" alt="">
+                        </div>
+                        <p>Клуб профессионального бокса</p>
+                    </div>
+                    <div class="alashpride-logo col-md-4 col-sm-4 col-xs-6 txt-center">
+                        <div class="img-center center-alashpride">
+                        <img src="./img/logopartners/alashpride.png" alt="">
+                        </div>
+                        <p>Бойцовский клуб</p>
+                    </div>
+                    <div class="af-logo col-md-4 col-sm-4 col-xs-6 txt-center">
+                        <div class="img-center center-af">
+                        <img src="./img/logopartners/af.png" alt="">
+                        </div>
+                        <p>Клуб смешанных единоборств</p>
+                    </div>
+                    <div class="arlan-logo col-md-4 col-sm-4 col-xs-6 txt-center">
+                        <div class="img-center center-arlan">
+                        <img src="./img/logopartners/arlan.png" alt="">
+                        </div>
+                        <p>Сеть кроссфита</p>
+                    </div>
+                    <div class="kayrat-logo col-md-4 col-sm-4 col-xs-6 txt-center">
+                        <div class="img-center center-kayrat">
+                        <img src="./img/logopartners/kayrat.png" alt="">
+                        </div>
+                        <p>Футбольный клуб “Кайрат”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container9" id="client">
+        <div class="container">
+            <div class="row">
+                <div class="partners-title col-md-12 col-sm-12 col-xs-12">
+                    <h1>ФОТО КЛИЕНТОВ</h1>
+                    <div class="underline-black underline-otzivi"></div>
+                </div>
+                <div class="client-photo col-md-8 col-xs-12 center-block">
+                    <div id="owl-carousel">
+                          <div class="item"><a href="./img/otzivi/otziv21.png" data-lightbox="image-1" data-title=""><div class="img-slide-2"><img src="./img/otzivi/otziv21.png"></div></a></div>
+                          <div class="item"><div class="img-slide-2"><a href="./img/otzivi/otziv22.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv22.png"></a></div></div>
+                          <div class="item"><div class="img-slide-2"><a href="./img/otzivi/otziv23.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv23.png"></a></div></div>
+                          <div class="item"><div class="img-slide-2"><a href="./img/otzivi/otziv16.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv16.png"></a></div></div>
+                          <div class="item"><div class="img-slide-2"><a href="./img/otzivi/otziv19.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv19.png"></a></div></div>
+                          <div class="item"><div class="img-slide-2"><a href="./img/otzivi/otziv20.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv20.png"></a></div></div>
+                          <div class="item"><div class="img-slide-2"><a href="./img/otzivi/otziv24.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv24.png"></a></div></div>
+                          <div class="item"><div class="img-slide-2"><a href="./img/otzivi/otziv25.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv25.png"></a></div></div>
+                          <div class="item"><div class="img-slide-2"><a href="./img/otzivi/otziv26.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv26.png"></a></div></div>
+                          <div class="item"><div class="img-slide-2"><a href="./img/otzivi/otziv27.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv27.png"></a></div></div>
+                          <div class="item"><div class="img-slide-2"><a href="./img/otzivi/otziv28.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv28.png"></a></div></div>
+                          <div class="item"><div class="img-slide"><a href="./img/otzivi/otziv14.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv14.png"></a></div></div>
+                          <div class="item"><div class="img-slide"><a href="./img/otzivi/otziv3.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv3.png"></a></div></div>
+                          <div class="item"><div class="img-slide"><a href="./img/otzivi/otziv12.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv12.png"></a></div></div>
+                          <div class="item"><div class="img-slide"><a href="./img/otzivi/otziv6.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv6.png"></a></div></div>
+                          <div class="item"><div class="img-slide"><a href="./img/otzivi/otziv7.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv7.png"></a></div></div>
+                          <div class="item"><div class="img-slide"><a href="./img/otzivi/otziv9.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv9.png"></a></div></div>
+                          <div class="item"><div class="img-slide"><a href="./img/otzivi/otziv13.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv13.png"></a></div></div>
+                          <div class="item"><div class="img-slide"><a href="./img/otzivi/otziv4.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv4.png"></a></div></div>
+                          <div class="item"><div class="img-slide"><a href="./img/otzivi/otziv2.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv2.png"></a></div></div>
+                          <div class="item"><div class="img-slide"><a href="./img/otzivi/otziv11.png" data-lightbox="image-1" data-title=""><img src="./img/otzivi/otziv11.png"></a></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container10-11">
+        <div class="container10">
+            <div class="container">
+                <div class="row">
+                    <div class="formazakaz-1 col-md-12 col-sm-12 col-xs-12">
+                    <div class="formaz-1">
+                        <div class="get-mask name-mask col-md-7 col-sm-6">
+                        <div class="lenta-sprite-left"></div>
+                            <p>ИМЕННАЯ ТРЕНИРОВОЧНАЯ МАСКА</p>
+                            <img class="ilia-mask" src="./img/traningmask.png" alt="">
+                            <div class="arrow-left mob-hidden"></div>
+                            <label id="contenInput" class="mob-hidden">Нурсултан</label>
+                        </div>
+                        <div class="form col-md-5 col-sm-6 col-xs-12">
+                            <div class="form-title7 form-title-10 form-title10">
+                                <p>ЗАКАЗАТЬ ИМЕННУЮ МАСКУ</p>
+                            </div>
+                            <div class="filter-form z-10">
+                                <p>Введите имя</p>
+                                <input class="mytext" name="name" id="namemask" maxlength="12" placeholder="Нурсултан">
+                                <label for="ModalZvonok" class="form-zakaz1"type="button" data-toggle="modal" data-target="#ModalZvonok">ЗАКАЗАТЬ</label>
+                            </div>
+                            <div class="lenta-sprite-right"></div>
+                            <div class="arrow-right mob-hidden"></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-10-1">
+        	<div class="container">
+        		<div class="row">
+        			<div class="title-needed title-11 col-md-12 col-sm-12 col-xs-12">
+	                    <h1>ОПЛАТА ПОСЛЕ ДОСТАВКИ</h1>
+	                    <div class="underline-white"></div>
+                	</div>
+                	<div class="col-md-4 col-sm-4">
+                		<div class="condition1 mobi-margin center-block">
+                			<div class="lenta-top-left"></div>
+                			<ul>
+                				<li>КУРьерская служба АЛЕМТАТ</li>
+                				<li>оплата наложенным платежом</li>
+                				<li>оплата после получения</li>
+                			</ul>
+                            <div class="alemtat"><img src="./img/delivery/alemtat.png" alt="alemtat">
+                            </div>
+                			<div class="lenta-bottom-right"></div>
+                		</div>
+                	</div>
+                	<div class="col-md-4 col-sm-4">
+                		<div class="condition1 dhl-mobi center-block">
+                			<div class="lenta-top-left"></div>
+                			<ul>
+                				<li>DHL УСКОРЕННАЯ ДОСТАВКА</li>
+                				<li>при полной предоплате</li>
+                			</ul>
+                            <div class="dhl"><img src="./img/delivery/dhl.png" alt="dhl">
+                            </div>
+                			<div class="lenta-bottom-right"></div>
+                		</div>
+                	</div>
+                	<div class="col-md-4 col-sm-4">
+                		<div class="condition1 dhl-mobi center-block">
+                			<div class="lenta-top-left"></div>
+                			<ul>
+                				<li>KAZPOCHTA</li>
+                				<li>Доставка в удаленные населенные пункты по полной предоплате</li>
+                			</ul>
+                            <div class="kazpost"><img src="./img/delivery/kazpost.png" alt="kazpost">
+                            </div>
+                			<div class="lenta-bottom-right"></div>
+                		</div>
+                	</div>
+        		</div>
+        	</div>
+        </div>
+        <div class="container11 hidden-sm hidden-xs ">
+            <div class="container">
+                <div class="row">
+                    <div class="title-needed title-11 col-md-12 col-sm-12 col-xs-12">
+	                    <h1>ДОСТАВКА ПО ВСЕМУ КАЗАХСТАНУ</h1>
+	                    <div class="underline-white"></div>
+                	</div>
+                    <div class="map col-md-12 hidden-xs hidden-sm ">
+                        <img src="./img/map.png">
+                        <span for="Modalalmaty" data-toggle="modal" data-target="#Modalalmaty" class="hint--bottom interactive-map almaty mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Алматы"></span>
+                        <span for="Modaltaraz" data-toggle="modal" data-target="#Modaltaraz" class="hint--bottom interactive-map taraz mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Тараз"></span>
+                        <span for="Modalshim" data-toggle="modal" data-target="#Modalshim" class="hint--bottom interactive-map shim mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Шымкент"></span>
+                        <span for="Modaltald" data-toggle="modal" data-target="#Modaltald" class="hint--bottom interactive-map taldikorgan mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Талдыкорган"></span>
+                        <span for="Modalkamen" data-toggle="modal" data-target="#Modalkamen" class="hint--bottom interactive-map kamenogorsk mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Усть&nbsp;Каменогорск"></span>
+                        <span for="Modalsem" data-toggle="modal" data-target="#Modalsem" class="hint--bottom interactive-map semipalatinsk mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Семипалатинск"></span>
+                        <span for="Modalkaraganda" data-toggle="modal" data-target="#Modalkaraganda" class="hint--bottom interactive-map karaganda mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Караганду"></span>
+                        <span for="Modaljeskazgan" data-toggle="modal" data-target="#Modaljeskazgan" class="hint--bottom interactive-map jeskazgan mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Жезказган"></span>
+                        <span for="Modalkizilorda" data-toggle="modal" data-target="#Modalkizilorda" class="hint--bottom interactive-map kizilorda mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Казылорду"></span>
+                        <span for="Modalastana" data-toggle="modal" data-target="#Modalastana" class="hint--bottom interactive-map astana mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Астану"></span>
+                        <span for="Modalpavlodar" data-toggle="modal" data-target="#Modalpavlodar" class="hint--bottom interactive-map pavlodar mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Павлодар"></span>
+                        <span for="Modalpetropavl" data-toggle="modal" data-target="#Modalpetropavl" class="hint--bottom interactive-map petropavl mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Петропавловск"></span>
+                        <span for="Modalkokshetau" data-toggle="modal" data-target="#Modalkokshetau" class="hint--bottom interactive-map kokshetau mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Кокшетау"></span>
+                        <span for="Modalkostanay" data-toggle="modal" data-target="#Modalkostanay" class="hint--bottom interactive-map kostanay mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Костанай"></span>
+                        <span for="Modalaktubinsk" data-toggle="modal" data-target="#Modalaktubinsk" class="hint--bottom interactive-map aktubinsk mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Актюбинск"></span>
+                        <span for="Modaluralsk" data-toggle="modal" data-target="#Modaluralsk" class="hint--bottom interactive-map uralsk mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Уральск"></span>
+                        <span for="Modalatirau" data-toggle="modal" data-target="#Modalatirau" class="hint--bottom interactive-map atirau mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Атырау"></span>
+                        <span for="Modalaktau" data-toggle="modal" data-target="#Modalaktau" class="hint--bottom interactive-map aktau mob-hidden" data-tooltip1 data-tooltip-message="Заказать&nbsp;в&nbsp;Актау"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="title-footer col-md-4 col-sm-4 col-xs-12">
+                    <h1>НАШИ КОНТАКТЫ</h1>
+                </div>
+                <div class="contacts col-md-12 col-sm-12">
+                    <div class="affiliate col-md-4 col-sm-8 col-xs-6">
+                        <ul>
+                            <li><a for="Modalpartners" data-toggle="modal" data-target="#Modalpartners" href="">Партнерам</a></li>
+                            <li><a for="Modalpartners" data-toggle="modal" data-target="#Modalpartners" href="">Дилерам</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                    <div class="communi col-md-3 col-sm-4 col-xs-6">
+                        <ul>
+                            <li>КАК С НАМИ СВЯЗАТЬСЯ:</li>
+                            <li>3dspirit@mail.ru</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="communi col-md-3 col-sm-8 hidden-xs">
+                        <ul>
+                            <li>ШОУ РУМ:</li>
+                            <li>г. Алматы, Шарипова 124</li>
+                            <li>г.Астана ул.Майлина 10</li>
+                        </ul>
+                    </div>
+                    <div class="communi col-md-2 col-sm-4 hidden-xs">
+                        <ul>
+                            <li>ВРЕМЯ РАБОТЫ:</li>
+                            <li>с 9:00 - 21:00</li>
+                            <li>Без выходных</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="mediaguru container-fluid col-md-12 col-sm-12 col-xs-12">
+        <p><i class="media-ico"></i>CEO<a href="https://vk.com/vlad_vrx"> Vladislav Darnopykh</a></p>
+    </div>
+    <div id="Modalvideo2" class="modal partners fade">
+          <div class="modal-dialog">
+            <div class="modal-content forzvonok">
+                 <div class="embed-responsive embed-responsive-16by9">
+                            <div class="embed-responsive embed-responsive-16by9 ">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RhRY9CIn-oA" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <div id="Modalvideo1" class="modal partners fade">
+          <div class="modal-dialog">
+            <div class="modal-content forzvonok">
+                 <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/04cXLklCgpk"></iframe>
+                    </div>
+             </div>
+            </div>
+          </div>
+    <div id="ModalZvonok" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ</h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ПОЛУЧИТЬ ПОДАРОК" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalalmaty" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>АЛМАТЫ</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modaluralsk" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>УРАЛЬСК</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalaktubinsk" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>АКТЮБИНСК</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalatirau" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>АТЫРАУ</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalaktau" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>АКТАУ</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalsem" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>СЕМИПАЛАТИНСК</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modaljeskazgan" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>ЖЕЗКАЗГАН</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalastana" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>АСТАНУ</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalpavlodar" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>ПАВЛОДАР</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalpetropavl" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>ПЕТРОПАВЛОВСК</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalkokshetau" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>КОКШЕТАУ</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalkostanay" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>КОСТАНАЙ</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalkizilorda" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>КЫЗЫЛОРДУ</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalkaraganda" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>КАРАГАНДУ</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalkamen" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>УСТЬ-КАМЕНОГОРСК</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalshim" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>ШЫМКЕНТ</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modaltald" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>ТАЛДЫКОРГАН</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modaltaraz" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+               <div class="lenta-sprite-left"></div>
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЗАТЬ МАСКУ В <span>ТАРАЗ</span></h1>
+                  <p>Оставьте заявку и с вами свяжется наш менеджер:</p>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ" name="submit"/>
+                    </form>
+                </div>
+                <div class="lenta-sprite-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ModalZvonok1" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content forzvonok">
+              <div class="modal-body bg-none">
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ЗАКАЖИТЕ ОБРАТНЫЙ ЗВОНОК И МЫ ВАМ ПЕРЕЗВОНИМ</h1>
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ЗАКАЗАТЬ ЗВОНОК" name="submit"/>
+                    </form>
+                </div>
+								<p class="pozvoni"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Modalpartners" class="modal partners fade">
+          <div class="modal-dialog">
+            <div class="modal-content forzvonok">
+              <div class="modal-body bg-none">
+              <button class="close" type="button" data-dismiss="modal">×</button>
+                  <h1>ХОТИТЕ СТАТЬ НАШИМИ ПАРТНЕРАМИ?</h1>
+                  <p>Заполните форму и с вами свяжется наш менеджер:
+                  <div class="modal-form">
+                      <form id="application_form" action="application1.php" method="post" enctype="multipart/form-data">
+                            <input  name="name"  id="applicationName_form" maxlength="20" placeholder="Ваше имя" required>
+                            <input  name="phone"  type="tel" id="applicationTelephone_form" maxlength="20" placeholder="Введите ваш телефон" required>
+                            <input class="applicationButton_form" type="submit" value="ОСТАВИТЬ ЗАЯВКУ" name="submit"/>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1524739237829511');
+    fbq('track', "PageView");</script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1524739237829511&e.."
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter35867950 = new Ya.Metrika({
+                    id:35867950,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/35867950" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-74870628-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+    <script>
+        $(document).ready(function() {
+          $('#owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            items:3,
+            dots: true,
+            autoWidth:true,
+            responsiveClass:true,
+            responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            loop:false
+        }
+    }
+        })
+        });
+    </script>
+    <script>
+    $(document).ready ( function(){
+    $(".mytext").keyup(function() {
+             $('#contenInput').text($(".mytext").val());
+    });
+     
+    });
+    </script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        })
+    </script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/lightbox.js"></script>
+  </body>
+</html>
