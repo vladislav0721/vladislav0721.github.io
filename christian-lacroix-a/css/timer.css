@@ -1,0 +1,43 @@
+/*Таймер*/
+.countbox {
+    font-size: 24px;
+    height: 60px;
+    width: 280px;
+    padding-left: 8px;
+    color: #fff;
+    margin: 0 auto 20px;
+    box-sizing: border-box;
+}
+.countbox .countbox-num {
+    float: left;
+}
+.countbox .countbox-space {
+    float: left;
+    height: 48px;
+    width: 10px;
+    line-height: 48px;
+    text-align: left;
+    color: #222;
+}
+.countbox-hours1, .countbox-mins1, .countbox-secs1, .countbox-hours2, .countbox-mins2, .countbox-secs2 {
+    float: left;
+    width: 36px;
+    margin-right: 4px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    z-index: 1;
+    background: #fff;
+    border-radius: 5px;
+    color: #bf3b1c;
+    font-size: 26px;
+     font-family: 'Noto Serif', serif;
+     font-style: italic;
+}
+
+.countbox-hours-text, .countbox-mins-text, .countbox-secs-text {
+    font-size: 14px;
+    color: #222;
+    text-align: center;
+        font-family: 'a', Verdana, sans-serif;
+}

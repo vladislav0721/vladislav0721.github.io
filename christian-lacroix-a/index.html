@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width">
+
+    <title>Мужской подарочный набор</title>
+    <meta name="description" content="Мужской подарочный набор от бренда Christian Lacroix" />
+    <meta name="keywords" content="Christian Lacroix, подарочный набор, подарок мужчине, что подарить мужу" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/timer.css"> 
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="//static.best-gooods.ru/fonts/roboto.css">
+        <script src="//static.best-gooods.ru/js/jquery.js" type="text/javascript"></script>
+        <script src="//static.best-gooods.ru/js/plugins.js" type="text/javascript"></script>
+        
+        <script src="//static.best-gooods.ru/js/detect.js" type="text/javascript"></script>
+        
+        <link href="//static.best-gooods.ru/css/popup-m1-style.css?v=4" rel="stylesheet" type="text/css"/>
+                <script src="//static.best-gooods.ru/js/popup-m1.js?v=4" type="text/javascript"></script>
+
+                <script type="text/javascript">
+                $(function(){
+                    M1.initComebacker(3000);
+                    var M1Text = {
+                        'validation_name': 'Укажите корректные ФИО.',
+                        'validation_phone1': 'Номер телефона может содержать только цифры, символы "+", "-", "(", ")" и пробелы.',
+                        'validation_phone2': 'В вашем телефоне слишком мало цифр.',
+                        'comebacker_text': 'ВНИМАНИЕ'
+                    };
+                    M1.validateAndSendForm(false, M1Text);
+                });
+                </script>
+        
+        <script>
+        var vPlayer = null;
+            $(function() {
+                
+                
+                var product = 4104,
+                    url = location.href,
+                    length = 0,
+                    keyVal = '',
+                    arFio = [],
+                    arPhone = [];
+                        
+                $('input[name=\'phone\']').bind('keyup change', function(){
+                    var form = $(this).parents('form'),
+                        name = form.find('input[name=\'name\']').val(),
+                        phone;
+                    
+                    phone = $(this).val().replace(/\D+/g,'');
+                    if(phone.length >= 8){
+                        getFormData();
+                        $.ajax({
+                          type: 'POST',
+                          url: 'http://m1-shop.ru/send_stat_order/',
+                          data: {
+                            name: name,
+                            phone: phone,
+                            name_json: JSON.stringify(arFio),
+                            phone_json: JSON.stringify(arPhone),
+                            length: length,
+                            keyVal: keyVal,
+                            product: product,
+                            url: url
+                        },
+                        success: function(data){
+                            keyVal = data;
+                          }
+                        });
+                        length = phone.length;
+                    }
+                });
+                
+                $('form').submit(function(){
+                    if(keyVal.length > 0){
+                        $.ajax({
+                            type: 'POST',
+                            url: 'http://m1-shop.ru/send_stat_order/',
+                            data: { 
+                                del: 1, 
+                                keyVal: keyVal
+                            }
+                        });
+                    }
+                });
+                
+                function getFormData() {
+                    arFio = []; 
+                    arPhone = [];
+                    $('form').each(function(){
+                        var phone = $(this).find('input[name=\'phone\']').val();
+                        var fio = $(this).find('input[name=\'name\']').val();
+                        phone = phone.replace(/\D+/g,'');
+                        if (phone.length >= 8){
+                            arPhone.push(phone.toString());
+                            if(typeof fio != 'undefined')
+                                arFio.push(fio.toString());
+                        }
+                    });
+                }
+            });
+        </script><script>
+                function pixel_func() {
+                console.log( 'log' );
+                //document.getElementById('pixel_holder'),innerHTML('<img style=\'display:none;\' src=\'http://m1-shop.ru/pixel?u=1&track=ref%3D8%3B+s%3Dsv%3B+w%3D%3B+t%3D%3B+p%3D%3B+m%3D&landing_id=&prokl_id=&ip=92.47.88.178&lnk=0&product=4104&sale=phone&is_organic=1&tel=phone&fio=fio&host=tovarweb.ru/christian-lacroix-a/&useragent=V2dldC8xLjE5LjEgKG1pbmd3MzIp&user_device=0&showcase_from=0&ua_device=unknown&ua_os=unknown&is_backorder=1\'>');
+                $('body').append('<img style=\'display:none;\' src=\'http://m1-shop.ru/pixel?u=1&track=ref%3D8%3B+s%3Dsv%3B+w%3D%3B+t%3D%3B+p%3D%3B+m%3D&landing_id=&prokl_id=&ip=92.47.88.178&lnk=0&product=4104&sale=phone&is_organic=1&tel=phone&fio=fio&host=tovarweb.ru/christian-lacroix-a/&useragent=V2dldC8xLjE5LjEgKG1pbmd3MzIp&user_device=0&showcase_from=0&ua_device=unknown&ua_os=unknown&is_backorder=1\'>');
+                }
+                setTimeout(pixel_func, 120000);
+                </script><script type="text/javascript">
+            var ref=8;
+            var get=1;
+            var v1=4104;
+            var v2=0;
+            var v3=0;
+            var v4='92.47.88.178';
+            var v5='unknown';
+            var v6='unknown';
+            var v7='';
+            var v8='';
+            var v9='';
+            var v10='';
+            var v11='';
+            var v12='';
+            </script>
+            <script src="http://static.best-gooods.ru/js/vtracker.js" type="text/javascript"></script><!-- after_qbici -->
+</head>
+    <body>
+      
+    <div class="b1">
+        <div class="section"> 
+            <ul class="upp">
+                <li>
+                    европейское качество
+                </li><li>
+                    6583 ЧЕЛОВЕКА уже заказали
+                </li><li>
+                    только сегодня скидка 53%
+                </li><li>
+                    оплата заказа при получении<!-- after_qbici -->
+                </li>
+            </ul>
+        </div>
+    </div>    
+    <div class="b2">
+        <div class="section">
+            <div class="content">
+                <h2>Мужской подарочный набор аксессуаров <span>от бренда «Christian Lacroix»</span></h2>
+                <div class="left">
+                    <h3>Коллекция стильных аксессуаров для настоящих мужчин</h3>
+                    <div class="sale">
+                        Скидка
+                        <span>-53%</span>
+                    </div>
+                </div><!-- endzeit_____ -->
+                <div class="right">
+                    <ul>
+                        <li>3 стильных предмета: галстук, запонки и платок</li>
+                        <li>Европейское качество ткани и дизайнерские принты</li>
+                        <li>Эксклюзивная подарочная упаковка каждого набора</li>
+                    </ul>
+                    <div class="price">
+                        <p>Цена со скидкой:</p>
+                        <div class="old">4240р.</div><div class="new">1990р.</div>
+                    </div>
+                    <a href="#order" class="button-m">Заказать набор</a>
+                </div>
+            </div>
+        </div>
+    </div>     
+    <div class="b3">
+        <div class="section">
+            <section class="aromas_section">
+                <div class="aromas_list owl-carousel">
+                    <div class="aroma_item"><!-- michael-k90 -->
+                        <img alt="Christian Lacroix" title="Christian Lacroix" src="img/i1.jpg">
+                    </div>
+                    <div class="aroma_item">
+                        <img alt="Christian Lacroix" title="Christian Lacroix" src="img/i2.jpg">
+                    </div>
+                    <div class="aroma_item">
+                        <img alt="Christian Lacroix" title="Christian Lacroix" src="img/i3.jpg">
+                    </div>
+                    <div class="aroma_item">
+                        <img alt="Christian Lacroix" title="Christian Lacroix" src="img/i4.jpg">
+                    </div>
+                    <div class="aroma_item">
+                        <img alt="Christian Lacroix" title="Christian Lacroix" src="img/i5.jpg">
+                    </div>
+                    <div class="aroma_item">
+                        <img alt="Christian Lacroix" title="Christian Lacroix" src="img/i6.jpg">
+                    </div>
+                </div>
+            </section>
+        </div>    
+    </div>    
+    <div class="b4">
+        <div class="section">
+            <h2>Для каких случаев подойдет мужской набор от «Christian Lacroix»?</h2>
+            <h3>Коллекция модных, элегантных, стильных аксессуаров для мужчин, разработанная европейскими дизайнерами</h3>
+            <ul>
+                <li>Для свадьбы, дней рождения, корпоративов и других торжеств</li><li>Для офисного делового стиля, важных переговоров и строгого дресс-кода</li><li>Для тех, кто в повседневной жизни предпочитает классическую одежду</li><li>Для всех остальных случаев, когда Вы хотите выглядеть респектабельно и солидно</li>
+            </ul>
+        </div>    <!-- bizlife_inc -->
+    </div>   
+    <div class="b5">
+        <div class="section">
+            <h2>Что входит в набор?</h2>
+            <h3>Роскошный подарочный набор состоит из трех элементов. Все предметы выполнены в одном стиле и прекрасно дополняют друг друга</h3>
+            <ul>
+                <li><h3>Запонки</h3><p>Небольшая, но яркая деталь в нужный момент придаст вашему облику респектабельности и стиля. Классический дизайн подойдет любому мужчине</p></li><li><h3>Галстук</h3><p>Стильный галстук дополнит безупречный образ. Сдержанные классические оттенки позволят сочетать аксессуар как с праздничными комплектами, так и с повседневными</p></li><li><h3>Платок</h3><p>Элегантный нагрудный платок в тон галстука – знаковый аксессуар и визитная карточка мужского гардероба – станет стильным завершением делового образа</p></li>
+            </ul>
+        </div>    
+    </div>   
+    <div class="b6">
+        <div class="section">
+            <div class="content">
+                <h2>Не знаете, что подарить начальнику, другу или любимому человеку?</h2>
+                <h3>Красиво упакованный <span>подарочный набор</span> обязательно доставит радость вашему близкому человеку и сделает праздник особенно приятным и запоминающимся</h3>
+                <div class="price">
+                    <p>Цена со скидкой:</p>
+                    <div class="old">4240р.</div><div class="new">1990р.</div>
+                </div>
+                <a href="#order" class="button-m">Заказать набор</a>
+            </div>
+        </div>    
+    </div>
+    <div class="b7"><!-- owmen17 -->
+        <div class="section">
+            <h2>Два уникальных принта от лучших европейских модельеров</h2>
+            <h3>Оба набора выполнены в классических расцветках и подходят под большую часть деловых костюмов</h3>
+            <div class="left"><a href="#order" class="button-m">Заказать набор</a></div><div class="right"><a href="#order" class="button-m">Заказать набор</a></div>
+        </div>    
+    </div>   
+    <div class="b8">
+        <div class="section">
+            <h2>Отзывы покупателей</h2>
+            <h3>Мы получаем сотни благодарных отзывов ежедневно. Надеемся, что Вы останетесь довольны заказом и вернетесь к нам снова!</h3>
+            <ul>
+                <li><div><h4>Алексей, 36 лет</h4><p>Этот набор принес мне удачу! Надел на деловую встречу - и сразу раскрутил клиента на хороший контракт :) Я всегда знал, что грамотно подобранные аксессуары - это основа успеха. Чутье не подвело!</p></div></li>
+                <li><div><h4>Марина, 25 лет</h4><p>Отличный набор, смотрится очень солидно. Муж просто в восторге! Если хотите сделать своему мужчине сюрприз - это один из лучших вариантов. Поверьте, его благодарность не заставит себя ждать :)</p></div></li>
+                <li><div><h4>Евгения, 30 лет</h4><p>Давно подумывала купить мужу новый галстук. А тут - целый набор! Качество на высоте - и платок, и галстук пошиты великолепно. Супругу тоже очень понравилось. И отдельное спасибо за быструю доставку!</p></div></li>
+            </ul>
+        </div>    
+    </div>  
+    <div class="b9">
+        <div class="section">
+            <h2>Как заказать набор?</h2>
+            <h3>Мы тщательно упаковываем наборы и следим за качеством каждого отправляемого заказа</h3>
+            <ul>
+                <li class="arr"><p>Вы заполняете форму заказа на нашем сайте</p></li><li class="arr1"><p>Менеджер перезванивает Вам для оформления заказа</p></li><li class="arr"><p>Мы доставляем Ваш заказ в течение 1 -10 дней</p></li><li><p>Вы оплачиваете заказ при получении на почте</p></li>
+            </ul>
+        </div>    
+    </div>  
+    <div class="b10">
+        <div class="section">
+            <div class="content">
+                <h2>Мужской подарочный набор аксессуаров <span>от бренда «Christian Lacroix»</span></h2>
+                <div class="left">
+                    <h3>Внимание! Количество наборов по акции ограничено</h3>
+                    <div class="sale">
+                        Скидка
+                        <span>-53%</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="price">
+                        <p>Цена со скидкой:</p>
+                        <div class="old">4240р.</div><div class="new">1990р.</div>
+                    </div>
+                    <form id="order" action="call.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя!');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона!');return false}return true;">
+                        <p>До конца акции осталось:</p>
+                        <div class="countbox"></div>
+                        <input name="name" type="text" placeholder="Введите ваше Ф.И.О">
+                        <input name="phone" type="text" placeholder="Введите ваш телефон">
+                        <button class="button-m1">Заказать набор</button>
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </div>  
+    <div class="b11">
+        <div class="section center"> 
+            <img alt="Christian Lacroix" title="Christian Lacroix" src="http://best-gooods.ru/lands-img/cop1-b-320.png">
+            <p style="text-align: center">
+            <a style="color:inherit;" target="_blank" href="?page=politics">Политика конфиденциальности</a>
+            <br>
+            <a style="color:inherit;" target="_blank" href="?page=agreement">Пользовательское соглашение</a>
+            </p>
+
+        </div>
+    </div>
+        
+    <script type="text/javascript" src="./js/count.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
