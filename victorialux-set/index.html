@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Victoriaset - Дизайнерская коллекция ювелирных изделий от Victoria Beckham</title>
+	<meta name="description" content="Стильное, оригинальное украшение от Виктории Бекхем, безупречно сочетающееся с любой одеждой">
+    <meta name="keywords" content="украшение, элементы к одежде, Виктория Бекхем, купить аксессуары к одежде со скидкой, дизайнерский пояс, брошка, украшение, коллекция ювелирных изделий от Victoria Beckham" />
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+        <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="flipclock/flipclock.css">
+
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+        <script src="libs/jquery/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	    <script src="libs/modernizr/modernizr.js"></script>
+        <script src="flipclock/flipclock.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="//static.best-gooods.ru/fonts/roboto.css">
+        <script src="//static.best-gooods.ru/js/jquery.js" type="text/javascript"></script>
+        <script src="//static.best-gooods.ru/js/plugins.js" type="text/javascript"></script>
+        
+        <script src="//static.best-gooods.ru/js/detect.js" type="text/javascript"></script>
+        
+        <link href="//static.best-gooods.ru/css/popup-m1-style.css?v=4" rel="stylesheet" type="text/css"/>
+                <script src="//static.best-gooods.ru/js/popup-m1.js?v=4" type="text/javascript"></script>
+
+                <script type="text/javascript">
+                $(function(){
+                    M1.initComebacker(3000);
+                    var M1Text = {
+                        'validation_name': 'Укажите корректные ФИО.',
+                        'validation_phone1': 'Номер телефона может содержать только цифры, символы "+", "-", "(", ")" и пробелы.',
+                        'validation_phone2': 'В вашем телефоне слишком мало цифр.',
+                        'comebacker_text': 'ВНИМАНИЕ'
+                    };
+                    M1.validateAndSendForm(false, M1Text);
+                });
+                </script>
+        
+        <script>
+        var vPlayer = null;
+            $(function() {
+                
+                
+                var product = 1258,
+                    url = location.href,
+                    length = 0,
+                    keyVal = '',
+                    arFio = [],
+                    arPhone = [];
+                        
+                $('input[name=\'phone\']').bind('keyup change', function(){
+                    var form = $(this).parents('form'),
+                        name = form.find('input[name=\'name\']').val(),
+                        phone;
+                    
+                    phone = $(this).val().replace(/\D+/g,'');
+                    if(phone.length >= 8){
+                        getFormData();
+                        $.ajax({
+                          type: 'POST',
+                          url: 'http://m1-shop.ru/send_stat_order/',
+                          data: {
+                            name: name,
+                            phone: phone,
+                            name_json: JSON.stringify(arFio),
+                            phone_json: JSON.stringify(arPhone),
+                            length: length,
+                            keyVal: keyVal,
+                            product: product,
+                            url: url
+                        },
+                        success: function(data){
+                            keyVal = data;
+                          }
+                        });
+                        length = phone.length;
+                    }
+                });
+                
+                $('form').submit(function(){
+                    if(keyVal.length > 0){
+                        $.ajax({
+                            type: 'POST',
+                            url: 'http://m1-shop.ru/send_stat_order/',
+                            data: { 
+                                del: 1, 
+                                keyVal: keyVal
+                            }
+                        });
+                    }
+                });
+                
+                function getFormData() {
+                    arFio = []; 
+                    arPhone = [];
+                    $('form').each(function(){
+                        var phone = $(this).find('input[name=\'phone\']').val();
+                        var fio = $(this).find('input[name=\'name\']').val();
+                        phone = phone.replace(/\D+/g,'');
+                        if (phone.length >= 8){
+                            arPhone.push(phone.toString());
+                            if(typeof fio != 'undefined')
+                                arFio.push(fio.toString());
+                        }
+                    });
+                }
+            });
+        </script><script>
+                function pixel_func() {
+                console.log( 'log' );
+                //document.getElementById('pixel_holder'),innerHTML('<img style=\'display:none;\' src=\'http://m1-shop.ru/pixel?u=1&track=ref%3D8%3B+s%3Dsv%3B+w%3D%3B+t%3D%3B+p%3D%3B+m%3D&landing_id=&prokl_id=&ip=92.47.88.178&lnk=0&product=1258&sale=phone&tel=phone&fio=fio&host=best-gooods.ru/victorialux-set/&useragent=V2dldC8xLjE5LjEgKG1pbmd3MzIp&user_device=0&showcase_from=0&ua_device=unknown&ua_os=unknown&is_backorder=1\'>');
+                $('body').append('<img style=\'display:none;\' src=\'http://m1-shop.ru/pixel?u=1&track=ref%3D8%3B+s%3Dsv%3B+w%3D%3B+t%3D%3B+p%3D%3B+m%3D&landing_id=&prokl_id=&ip=92.47.88.178&lnk=0&product=1258&sale=phone&tel=phone&fio=fio&host=best-gooods.ru/victorialux-set/&useragent=V2dldC8xLjE5LjEgKG1pbmd3MzIp&user_device=0&showcase_from=0&ua_device=unknown&ua_os=unknown&is_backorder=1\'>');
+                }
+                setTimeout(pixel_func, 120000);
+                </script><script type="text/javascript">
+            var ref=8;
+            var get=1;
+            var v1=1258;
+            var v2=0;
+            var v3=0;
+            var v4='92.47.88.178';
+            var v5='unknown';
+            var v6='unknown';
+            var v7='';
+            var v8='';
+            var v9='';
+            var v10='';
+            var v11='';
+            var v12='';
+            </script>
+            <script src="http://static.best-gooods.ru/js/vtracker.js" type="text/javascript"></script>    
+</head>
+
+<body>
+  
+    <header id="header">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+                    <img src="images/logo.png" class="logo" width="116" height="155" alt="logo.png">
+                    <h2>Дизайнерская коллекция<br />ювелирных изделий от<br />Victoria Beckham</h2>
+                    <h5>Розничная цена сета</h5>
+                    <h3>5800 р.</h3>
+                    <div class="clearfix"></div>
+                    <div class="cena">
+                        <h2>ЦЕНА ПО АКЦИИ!</h2>
+                        <h4>1690 р.</h4>
+                        <h5>Торопитесь, Вы можете упустить <span>скидку 71%</span></h5>
+                        <div class="countdown-wrapper">
+                                <div class="countdown" id="countdown-1"></div>
+                        </div>
+                    </div>
+                    <form action="call.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона');return false}return true;">
+                        <input type="text" name="name" placeholder="Ваше имя" required="" />
+                        <input type="text" name="phone" placeholder="Ваш телефон" required="" />
+                        <button class="btn order-form-button" >ЗАКАЗАТЬ</button>
+                    </form>
+                </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</header><!-- end header -->
+    
+    <div id="block">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+	            </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block -->
+    
+    <div id="block2">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-9 col-xs-offset-3">
+	                <p>Виктория Бекхэм, еще недавняя солистка популярной группы Spice Girls, сегодня является одним из лучших дизайнеров женской одежды мира. Она создает неповторимые, уникальный образы, ярко отражающие Вашу индивидуальность. Виктория имеет ряд наград в области моды, а ее имя увенчано на аллее звезд в Голливуде и ценится во всем мире.</p>
+                    <h5>Считаю набор 24К Victoria LUX одним из лучших дизайнов. Он подходит под любой тон платьев. Неплохо смотрится на джинсовой одежде. Предпочтительными тонами для него считаю, черный, красный и салатовый. Изящная структура пояса подходит и под винтаж.</h5>
+                    <img src="images/img8.png" class="img8" width="210" height="74" alt="img8.png">
+                    <h4>Victoria Beckham</h4>
+	            </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block2 -->
+    
+    <div id="block3">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2>В СОСТАВ КОЛЛЕКЦИИ VICTORIA LUX ВХОДЯТ:</h2>
+	            </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block3 -->
+    
+    <div id="block4">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-6">
+                	<div class="thumbnail">
+                	    <img data-src="holder.js/300x200" src="images/img9.jpg" alt="...">
+                     	<div class="caption">
+                	      	<h3>Розничная цена <s>1690 р.</s></h3>
+                	       	<p>Браслет из жемчуга 24К напыления Oasis</p>
+                            <h5>* регулируемый размер для любого запястья</h5>
+                		</div>
+                	</div>
+                </div><!-- end col-xs-6 -->
+                <div class="col-xs-6">
+                	<div class="thumbnail">
+                	    <img data-src="holder.js/300x200" src="images/img10.jpg" alt="...">
+                     	<div class="caption">
+                	      	<h3>Розничная цена <s><script type="text/javascript">document.write(Math.round(5800/2.9));</script> р.</s></h3>
+                	       	<p>Дизайнерский пояс 24К Victoria Lux</p>
+                            <h5>* в наличии золотой и серебряный цвет</h5>
+                		</div>
+                	</div>
+                </div><!-- end col-xs-6 -->
+                <div class="col-xs-6">
+                	<div class="thumbnail">
+                	    <img data-src="holder.js/300x200" src="images/img11.jpg" alt="...">
+                     	<div class="caption">
+                	      	<h3>Розничная цена <s><script type="text/javascript">document.write(Math.round(5800/5.8));</script> р.</s></h3>
+                	       	<p>Дизайнерский ободок для волос</p>
+                		</div>
+                	</div>
+                </div><!-- end col-xs-6 -->
+                <div class="col-xs-6">
+                	<div class="thumbnail">
+                	    <img data-src="holder.js/300x200" src="images/img12.jpg" alt="...">
+                     	<div class="caption">
+                	      	<h3>Розничная цена <s><script type="text/javascript">document.write(Math.round(5800/8.4));</script> р.</s></h3>
+                	       	<p>Стильная заколка для волос</p>
+                		</div>
+                	</div>
+                </div><!-- end col-xs-6 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block4 -->
+    
+    <div id="block5">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2>ДИЗАЙНЕРСКИЙ ПОЯС VICTORIA LUX</h2>
+	            </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block5 -->
+    
+    <div id="block6">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <p>Застежка: цельнометаллическая<br />Длина: 65 см<br />(растягивается на талию до 95 см)<br />Материал: Цельнометаллическое основание,<br />24К золотое покрытие</p>
+                    
+                    <div class="galereia">
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/zoloto/1.jpg" class = "colorbox">
+                            <img src="images/img15.jpg" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/zoloto/6.jpg" class = "colorbox">
+                            <img src="images/img16.jpg" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/zoloto/14.jpg" class = "colorbox">
+                            <img src="images/img17.jpg" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/zoloto/15.jpg" class = "colorbox">
+                            <img src="images/img18.jpg" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        
+                        
+                        
+                        
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/serebro/1.jpg" class = "colorbox">
+                            <img src="images/img19.jpg" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/serebro/2.jpg" class = "colorbox">
+                            <img src="images/img20.jpg" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/serebro/3.jpg" class = "colorbox">
+                            <img src="images/img21.jpg" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/serebro/4.jpg" class = "colorbox">
+                            <img src="images/img22.jpg" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                    </div><!-- end galereia -->
+                    <div class="clearfix"></div>
+                    <h2>Пояс Victoria Lux подходит под <span>любой цвет и тип одежды</span></h2>
+                    
+                    <div class="galereia2">
+                        <div class="col-xs-4">
+                            <img src="images/img23.jpg"  alt="Пояс Victoria Lux">
+                        </div><!-- end col-xs-4 -->
+                        <div class="col-xs-4">
+                            <img src="images/img24.jpg"  alt="Пояс Victoria Lux">
+                        </div><!-- end col-xs-4 -->
+                        <div class="col-xs-4">
+                            <img src="images/img25.jpg"  alt="Пояс Victoria Lux">
+                        </div><!-- end col-xs-4 -->
+                    </div><!-- end galereia2 -->
+                    
+	            </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block6 -->
+    
+    <div id="block7">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2>БРАСЛЕТ OASIS</h2>
+	            </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block7 -->
+    
+    <div id="block8">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-6 col-xs-offset-6">
+	                <h3>Браслет из жемчуга и 24К<br />напыления Oasis<br />Диаметр: 8 см, длина 15 см</h3>
+                    <p>Браслет Oasis является незаменимой частью сета Victoria Lux. Он идеально сочетается практически с любым видом одежды. белый жемчуг и кристаллы от Swarovski делают внешний вид максимально дорогим и солидным, а регулировка длины обеспечивает удобное использование на любой части руки.</p>
+	            </div><!-- end col-xs-6 -->
+                <div class="clearfix"></div>
+                <div class="galereia">
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/braslet/2482213743_2067050121.jpg" class = "colorbox">
+                            <img src="images/img28.jpg" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/braslet/2486940724_2067050121.jpg" class = "colorbox">
+                            <img src="images/img29.jpg" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/braslet/2486928505_2067050121.jpg" class = "colorbox">
+                            <img src="images/img30.jpg" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/braslet/2486925986_2067050121.jpg" class = "colorbox">
+                            <img src="images/img31.jpg" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        
+                </div><!-- end galereia -->
+                <div class="clearfix"></div>
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block8 -->
+    
+    <div id="block9">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2>ОБОДОК ДЛЯ ВОЛОС</h2>
+	            </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block9 -->
+    
+    <div id="block10">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-6">
+	                <h3>Дизайнерское украшение для<br />головы от Victoria Beckham</h3>
+                    <p>Стильное, оригинальное украшение от Виктории Бекхем, стильно сочетающееся со всеми элементами ювелирного сета Victoria Lux</p>
+	            </div><!-- end col-xs-6 -->
+                <div class="clearfix"></div>
+                <div class="galereia">
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/obodok/756320652_764994314.jpg" class = "colorbox">
+                            <img src="images/img34.png" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/obodok/756320654_764994314.jpg" class = "colorbox">
+                            <img src="images/img35.png" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/obodok/2148883788_1359246748.jpg" class = "colorbox">
+                            <img src="images/img36.png" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/obodok/756320655_764994314.jpg" class = "colorbox">
+                            <img src="images/img37.png" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        
+                </div><!-- end galereia -->
+                <div class="clearfix"></div>
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block10 -->
+    
+    <div id="block11">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2>ЗАКОЛКА ДЛЯ ВОЛОС</h2>
+	            </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block11 -->
+    
+    <div id="block12">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-6 col-xs-offset-6">
+	                <p>Стильная заколка для волос сочетается с любым компонентом ювелирного сета Victoria Lux. Легко крепится на волосах.</p>
+	            </div><!-- end col-xs-6 -->
+                <div class="clearfix"></div>
+                <div class="galereia">
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/zakolka/2.jpg" class = "colorbox">
+                            <img src="images/img40.png" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/zakolka/123.png" class = "colorbox">
+                            <img src="images/img41.png" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/zakolka/3.jpg" class = "colorbox">
+                            <img src="images/img42.png" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                        <div class="col-xs-3">
+                            <a href = "images/lend_pics/zakolka/234.png" class = "colorbox">
+                            <img src="images/img43.png" width="151" height="151" alt="сет VICTORIA LUX">
+                            </a>
+                        </div><!-- end col-xs-3 -->
+                </div><!-- end galereia -->
+                <div class="clearfix"></div>
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block12 -->
+    
+    <div id="block13">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2>ОТЗЫВЫ И РЕКОМЕНДАЦИИ</h2>
+	            </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block13 -->
+    
+    <div id="block14">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <p>Отзывы и рекомендации можете присылать нам на электронную почту: <a href="#">info@victorialux.ru</a></p>
+	            </div><!-- end col-xs-12 -->
+                
+                <div class="col-xs-4">
+                	<div class="thumbnail">
+                	    <img data-src="holder.js/300x200" src="images/img45.png" alt="...">
+                     	<div class="caption">
+                	      	<h3>Людмила, Сочи</h3>
+                	       	<p>Здравствуйте. Меня зовут Людмила, пишу из Сочи. На этой неделе получила посылочку, привез курьер. Заинтересовало акционное предложение - набор ювелирных украшений. Видела пояс в Европе, цена была около 100 евро. Честно, заказала почти сразу. Когда увидела в живую, то оказалась просто в восторге. Все в пленочках. Цвета удачные, не сильно яркие, то что надо. Взяла дополнительный ремень, сделали еще одну скидочку! Серебряный ремень очень хорошо и эстетично смотрится почти на любой одежде. Ремень достаточно хорошо тянется, поэтому можно носить и на верхней одежде. Материал полностью металлический. Даже трудно сказать как он сделан, похоже на ручную работу. Классная и качественная вещь! Браслет, заколка и ободок просто супер! Рекомендую</p>
+                		</div>
+                	</div>
+                </div><!-- end col-xs-4 -->
+                
+                <div class="col-xs-4">
+                	<div class="thumbnail">
+                	    <img data-src="holder.js/300x200" src="images/img46.png" alt="...">
+                     	<div class="caption">
+                	      	<h3>Наталья, Екатеринбург</h3>
+                	       	<p>Добрый день. Заказала у вас на сайте ювелирный набор Victoria LUX. Заказала почтой, посылка пришла очень быстро, учитывая что живу достаточно далеко в Екатеринбурге. Оплатил на почту. Получила смс уведомления, сервисом довольна. Вскрыла, взяла в руки и поняла что вещи очень качественные. Ремень благородного цвета, все в целофане, отдельно запечатано. Ремень хороший, нигде не провисает, удобно сидит, не жмет. Браслет суперский, смотрится тысячи на 3 только он)))) Давненько не делала таких хороших покупок. Подруги обзавидовались, рассказала им про ваш сайт, тоже будут заказывать!</p>
+                		</div>
+                	</div>
+                </div><!-- end col-xs-4 -->
+                
+                <div class="col-xs-4">
+                	<div class="thumbnail">
+                	    <img data-src="holder.js/300x200" src="images/img47.png" alt="...">
+                     	<div class="caption">
+                	      	<h3>Светлана, Красноярск</h3>
+                	       	<p>Здравствуйте victorialux. Меня зовут Светлана, пишу из далекого Красноярска. Неделю назад получила свою посылку с набором Victoria LUX. Оплатила при получении, за что спасибо. Сейчас время опасное делать предоплату. Когда первый раз одела, не могла ни нарадоваться. Ремни сразу показались стойкими и очень качественными. Действительно хорошо растягиваются, поэтому мне на мою талию в 78 сантиметров очень легко его надевать. Теперь это мои самые любимые ремни, причем и золотой, и серебряный. Ношу как на платьях, так иногда и на верхней одежде, причем самой разной. Муж мой сразу его заметил, и даже сказал что мне он очень идет. Обычно ничего не замечает, а тут вот сегодня сказал, поэтому наверное и решила написать =) Ну и фото делаю, с телефона. Все остальное тоже нравится. Браслет оазис очень клевый. Жемчуг белый, чистый, не темнеет. Кристалы хороши, не вываливаются. Спасибо огромное за хорошую скидку и хорошую вещь!</p>
+                		</div>
+                	</div>
+                </div><!-- end col-xs-4 -->
+                
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block14 -->
+    
+    <div id="block15">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2>ДОСТАВКА И ОПЛАТА</h2>
+	            </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block15 -->
+    
+    <div id="block16">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-6">
+	                <p>Доставка по Москве и Санкт-Петербургу осуществляется курьером. Срок доставки 2-3 дня. В остальные города и регионы России доставка осуществляется в течение 10-14 дней. Оплата заказа производится при получении! Стоимость доставки от 350 р.</p>
+	            </div><!-- end col-xs-6 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block16 -->
+    
+    <div id="block17">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2>АКЦИИ</h2>
+	            </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block17 -->
+    
+    <div id="block18">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+	                <h2>При заказе нескольких наборов, получаете дополнительные скидки</h2>
+	            </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block18 -->
+    
+    <div id="block19">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-3 col-xs-offset-1">
+	                <img src="images/img50.png" width="159" height="270" alt="сет VICTORIA LUX">
+	            </div><!-- end col-xs-3 -->
+                <div class="col-xs-1">
+	                <img src="images/img51.png">
+	            </div><!-- end col-xs-1 -->
+                <div class="col-xs-3">
+	                <img src="images/img50.png" width="159" height="270" alt="сет VICTORIA LUX">
+	            </div><!-- end col-xs-3 -->
+                <div class="col-xs-1">
+	                <img src="images/img51.png">
+	            </div><!-- end col-xs-1 -->
+                <div class="col-xs-3">
+	                <img src="images/img50.png" width="159" height="270" alt="сет VICTORIA LUX">
+	            </div><!-- end col-xs-3 -->
+                <div class="clearfix"></div>
+                <a class="btn" href ="#cena" >УЗНАТЬ ПОДРОБНЕЕ</a>
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block19 -->
+    
+    <div id="block20">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+	            </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</div><!-- end block20 -->
+    
+    <header id="header" class="header">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-12">
+                    <h5>Розничная цена сета</h5>
+                    <h3>5800 р.</h3>
+                    <div class="clearfix"></div>
+                    <div class="cena" id = "cena">
+                        <h2>ЦЕНА ПО АКЦИИ!</h2>
+                        <h4>1690 р.</h4>
+                        <h5>Торопитесь, Вы можете упустить <span>скидку 71%</span></h5>
+                        <div class="countdown-wrapper">
+                            <div class="countdown" id="countdown-2"></div>
+                        </div>
+                    </div>
+                    <form action="call.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона');return false}return true;">
+                        <input type="text" name="name" placeholder="Ваше имя" required="" />
+                        <input type="text" name="phone" placeholder="Ваш телефон" required="" />
+                        <button class="btn order-form-button" >ЗАКАЗАТЬ</button>
+                    </form>
+                </div><!-- end col-xs-12 -->
+	        </div> <!-- end row -->
+	    </div><!-- end container -->
+	</header><!-- end header -->
+    
+    <div id="block21">
+	    <div class="container">
+<img src="http://best-gooods.ru/lands-img/cop1-w-800.png" alt="кошелек Michael Kors">
+                <p style="text-align: center"><a style="color: inherit;" href="/victorialux-set/?page=politics" target="_blank">Политика конфиденциальности</a>&nbsp;&nbsp;<a style="color: inherit;" href="/victorialux-set/?page=agreement" target="_blank">Пользовательское соглашение</a></p>
+	</div><!-- end block21 -->
+    
+	<!-- Здесь пишем код -->
+	
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+    
+    
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+<!--    <script src="feedback/js/jquery.arcticmodal.js"></script>
+    <script src="feedback/js/jquery.jgrowl.js"></script>
+    <script src="feedback/js/feedback.js"></script>-->
+    <script src="js/bootstrap.js"></script>
+	<script src="js/common.js"></script>        
+    <script src="colorbox/jquery.colorbox-min.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="colorbox/colorbox.css">
+        
+<style>a.colorbox2, a.colorbox{text-decoration: none;}</style>
+<script type="text/javascript"> 
+  $(document).ready(function() { 
+    $('a.fancyimage').colorbox({  width: 1000,
+    height: 650 });
+    $('a.colorbox').colorbox({  width: 1000,
+    height: 650 });
+    $('a.colorbox2').colorbox({ rel:'rew3'});      
+    //$("a.fancyimage2").fancybox();  
+    
+  }); 
+</script>
+       
+        
+</body>
+</html>
