@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Optiglasses</title>
+    <meta name="description" content="Профессиональные очки для защиты глаз, улучшения зрения и восприятия информации.">
+    <meta name="keywords" content="очки для улучшения зрения, профессиональные очки, защитить глаза от компьютера, очки для защиты глаз, купить очки онлайн" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="//static.best-gooods.ru/fonts/roboto.css">
+        <script src="//static.best-gooods.ru/js/jquery.js" type="text/javascript"></script>
+        <script src="//static.best-gooods.ru/js/plugins.js" type="text/javascript"></script>
+        
+        <script src="//static.best-gooods.ru/js/detect.js" type="text/javascript"></script>
+        
+        <link href="//static.best-gooods.ru/css/popup-m1-style.css?v=4" rel="stylesheet" type="text/css"/>
+                <script src="//static.best-gooods.ru/js/popup-m1.js?v=4" type="text/javascript"></script>
+
+                <script type="text/javascript">
+                $(function(){
+                    M1.initComebacker(3000);
+                    var M1Text = {
+                        'validation_name': 'Укажите корректные ФИО.',
+                        'validation_phone1': 'Номер телефона может содержать только цифры, символы "+", "-", "(", ")" и пробелы.',
+                        'validation_phone2': 'В вашем телефоне слишком мало цифр.',
+                        'comebacker_text': 'ВНИМАНИЕ'
+                    };
+                    M1.validateAndSendForm(false, M1Text);
+                });
+                </script>
+        
+        <script>
+        var vPlayer = null;
+            $(function() {
+                
+                
+                var product = 1432,
+                    url = location.href,
+                    length = 0,
+                    keyVal = '',
+                    arFio = [],
+                    arPhone = [];
+                        
+                $('input[name=\'phone\']').bind('keyup change', function(){
+                    var form = $(this).parents('form'),
+                        name = form.find('input[name=\'name\']').val(),
+                        phone;
+                    
+                    phone = $(this).val().replace(/\D+/g,'');
+                    if(phone.length >= 8){
+                        getFormData();
+                        $.ajax({
+                          type: 'POST',
+                          url: 'http://m1-shop.ru/send_stat_order/',
+                          data: {
+                            name: name,
+                            phone: phone,
+                            name_json: JSON.stringify(arFio),
+                            phone_json: JSON.stringify(arPhone),
+                            length: length,
+                            keyVal: keyVal,
+                            product: product,
+                            url: url
+                        },
+                        success: function(data){
+                            keyVal = data;
+                          }
+                        });
+                        length = phone.length;
+                    }
+                });
+                
+                $('form').submit(function(){
+                    if(keyVal.length > 0){
+                        $.ajax({
+                            type: 'POST',
+                            url: 'http://m1-shop.ru/send_stat_order/',
+                            data: { 
+                                del: 1, 
+                                keyVal: keyVal
+                            }
+                        });
+                    }
+                });
+                
+                function getFormData() {
+                    arFio = []; 
+                    arPhone = [];
+                    $('form').each(function(){
+                        var phone = $(this).find('input[name=\'phone\']').val();
+                        var fio = $(this).find('input[name=\'name\']').val();
+                        phone = phone.replace(/\D+/g,'');
+                        if (phone.length >= 8){
+                            arPhone.push(phone.toString());
+                            if(typeof fio != 'undefined')
+                                arFio.push(fio.toString());
+                        }
+                    });
+                }
+            });
+        </script><script>
+                function pixel_func() {
+                console.log( 'log' );
+                //document.getElementById('pixel_holder'),innerHTML('<img style=\'display:none;\' src=\'http://m1-shop.ru/pixel?u=1&track=ref%3D8%3B+s%3Dsv%3B+w%3D%3B+t%3D%3B+p%3D%3B+m%3D&landing_id=&prokl_id=&ip=92.47.88.178&lnk=0&product=1432&sale=phone&tel=phone&fio=fio&host=true-gooods.ru/optiglasses/&useragent=V2dldC8xLjE5LjEgKG1pbmd3MzIp&user_device=0&showcase_from=0&ua_device=unknown&ua_os=unknown&is_backorder=1\'>');
+                $('body').append('<img style=\'display:none;\' src=\'http://m1-shop.ru/pixel?u=1&track=ref%3D8%3B+s%3Dsv%3B+w%3D%3B+t%3D%3B+p%3D%3B+m%3D&landing_id=&prokl_id=&ip=92.47.88.178&lnk=0&product=1432&sale=phone&tel=phone&fio=fio&host=true-gooods.ru/optiglasses/&useragent=V2dldC8xLjE5LjEgKG1pbmd3MzIp&user_device=0&showcase_from=0&ua_device=unknown&ua_os=unknown&is_backorder=1\'>');
+                }
+                setTimeout(pixel_func, 120000);
+                </script><script type="text/javascript">
+            var ref=8;
+            var get=1;
+            var v1=1432;
+            var v2=0;
+            var v3=0;
+            var v4='92.47.88.178';
+            var v5='unknown';
+            var v6='unknown';
+            var v7='';
+            var v8='';
+            var v9='';
+            var v10='';
+            var v11='';
+            var v12='';
+            </script>
+            <script src="http://static.best-gooods.ru/js/vtracker.js" type="text/javascript"></script></head>
+
+<!-- js begin -->
+<a href="#toreg" class="totop" id="totop">заказать</a>
+<div class="sale sale-1">
+	<img src="img/sale-57.png" alt="профессиональные очки Optiglasses">
+</div>
+<div class="sale sale-3">
+	<img src="img/ex4.png" alt="профессиональные очки Optiglasses">
+</div>
+<div class="sale sale-4">
+	<img src="img/uv400.png" alt="профессиональные очки Optiglasses">
+</div>
+<!-- js end -->
+<body>
+	<div class="background">
+	<!-- header begin -->
+	<header class="header">
+		<div class="inner">
+			<div class="header-wrapp">
+				<div class="col">
+					<div class="col__box">
+						<a href="index.html" class="logo">
+							<img src="img/logo.png" alt="профессиональные очки Optiglasses">
+						</a>
+						<p>Профессиональные очки для защиты глаз, улучшения зрения и восприятия информации</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="phone">
+						<p>ВНИМАНИЕ! АКЦИЯ!</p>
+						<span>Скидка 53%</span>
+					</div>
+					<div class="col__list">
+						<ul>
+							<li>
+								<p>Полностью защищают зрение от<br>ультрафиолетового излучения</p>
+							</li>
+							<li>
+								<p>Убирают слезоточивость, раздражение и боль в <br>глазах</p>
+							</li>
+							<li>
+								<p>Улучшают зрение без оптического увеличения</p>
+							</li>
+							<li>
+								<p>Качественно повышают восприятие информации</p>
+							</li>
+							<li>
+								<p>Подходят как мужчинам, так и женщинам</p>
+							</li>
+							<li>
+								<p>Идеальны для чтения и работы</p>
+							</li>
+							<li>
+								<p>Подходят для детей от 12 лет</p>
+							</li>
+						</ul>
+						<span>* без оптического увеличения</span>
+					</div>
+				</div>
+				<div class="price-old">
+					<p>СТАРАЯ ЦЕНА<br /><strong>2110</strong>р.</p>
+					<h3>АНТИКРИЗИСНАЯ ЦЕНА<br><span>990<small>р.</small></span></h3>
+					<span class="price-nice">Мы продлили акцию! Но не можем удерживать эту цену вечно!</span>
+					<div class="timer">
+						<div class="counter">
+							<div class="hours-wrapper"><span class="hours"></span></div>
+							<div class="minutes-wrapper"><span class="minutes"></span></div>
+							<div class="seconds-wrapper"><span class="seconds"></span></div>
+						</div>
+					</div>
+				</div>
+				<div class="header-man"></div>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+
+
+	<!-- price begin -->
+	<div class="price">
+		<div class="inner">
+			<div class="price__in">
+				<span>СТАРАЯ ЦЕНА - 2110р.</span>
+				<i class="stars">990р.</i>
+				<p> - АНТИКРИЗИСНАЯ ЦЕНА</p>
+			</div>
+		</div>
+	</div>
+	<!-- price end -->
+
+
+	<!-- register begin -->
+	<div class="register">
+		<div class="inner">
+			<div class="register__in">
+				<div class="col__list mobile-hidden">
+					<ul>
+						<li>
+							<p>Полностью защищают зрение от ультрафиолетового излучения</p>
+						</li>
+						<li>
+							<p>Убирают слезоточивость, раздражение и боль в глазах</p>
+						</li>
+						<li>
+							<p>Улучшают зрение без оптического увеличения</p>
+						</li>
+						<li>
+							<p>Качественно повышают восприятие информации</p>
+						</li>
+						<li>
+							<p>Подходят как мужчинам, так и женщинам</p>
+						</li>
+						<li>
+							<p>Идеальны для чтения и работы</p>
+						</li>
+						<li>
+							<p>Подходят для детей от 12 лет</p>
+						</li>
+					</ul>
+				</div>
+				<div class="form-wrapp">
+					<p>Мы продлили акцию! Но не можем удерживать эту цену вечно!</p>
+					<div class="timer">
+						<div class="counter">
+							<div class="hours-wrapper"><span class="hours"></span></div>
+							<div class="minutes-wrapper"><span class="minutes"></span></div>
+							<div class="seconds-wrapper"><span class="seconds"></span></div>
+						</div>
+					</div>
+					<form action="call.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона');return false}return true;">
+						<input type="text" class="name" name="name" placeholder="Введите Ф.И.О" required="">
+						<input type="text" class="your-phone" name="phone" placeholder="Введите телефон" required="">
+						<input type="submit" value="заказать" class="btn">заказать</input>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- register end -->
+
+
+	<!-- preview begin -->
+	<div class="preview">
+		<div class="inner">
+			<div class="preview__in">
+				<div class="text">
+					<p>Научно доказано, что на зрение человека выпадает 90% всей энергии человека, тем самым именно глаза являются самым энергозатратным органом человека.</p>
+					<p>С помощью OPTIGLASSES PRO+ Вы сможете снизить этот показатель, благодаря снижению UV-излучения, тем самым распределяя энергию на другие органы, в том числе и головной мозг, что улучшит его производительность и активность.</p>
+					<p>Японская компания SEIKO инвестировала не малую долю своих активов в разработку очков нового поколения - OPTIGLASSES PRO+ - без оптического увеличения.</p>
+					<p>OPTIGLASSES PRO+ помогут Вам практически полностью снять напряжение с глаз во время работы за компьютером, просмотре фильмов на телевизоре и телефоне, а также повысить восприимчивость информации. Чтение станет удовольствием, восприятие информации становится гораздо эффективней, эффективность работы головного мозга увеличится.</p>
+				</div>
+				<div class="heading">
+					<h2><span>ФОТО</span> OPTIGLASSES PRO+</h2>
+				</div>
+				<div class="relative" style="height: 410px">
+					<ul class="carousel">
+						<li class="item active"><img src="img/slider/img1.png"></li>
+						<li class="item"><img src="img/slider/img2.png"></li>
+						<li class="item"><img src="img/slider/img3.png"></li>
+					</ul>
+					<div class="controls">
+						<div class="controls-in">
+							<a href="#" class="previous">Previous</a>
+							<a href="#" class="next">Next</a>
+						</div>
+					</div>
+				</div>
+				<div class="heading">
+					<div class="inner">
+						<h2><span>ТЕХНОЛОГИИ</span></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- preview end -->
+
+
+	<!-- tencho begin -->
+	<div class="techno">
+		<div class="inner">
+			<div class="row">
+				<div class="row__in">
+					<div class="col">
+						<p>Двухуровневое сеточное покрытие (защита UV400 и защита EX4) полностью защищают ваши глаза от ультрафиолетового излучения и снимают нагрузку на 98%, повышая при этом усвоение информации</p>
+					</div>
+					<div class="col">
+						<img src="img/img-1.png" alt="профессиональные очки Optiglasses">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row__in">
+					<div class="col">
+						<img src="img/img-2.png" alt="профессиональные очки Optiglasses">
+					</div>
+					<div class="col">
+						<p>Очки OPTIGLASSES PRO+ имеют защиту UV400, то есть абсолютно ничем не уступают солнцезащитным очкам и защищают глаза от солнечного излучения</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row__in">
+					<div class="col">
+						<p>Антибликовое покрытие стекол защищает их от различного рода пятен и постоянных протираний</p>
+					</div>
+					<div class="col">
+						<span>*под UV-излучением</span>
+						<img src="img/img-3.png" alt="профессиональные очки Optiglasses">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row__in">
+					<div class="col">
+						<img src="img/img-4.png" alt="профессиональные очки Optiglasses">
+					</div>
+					<div class="col">
+						<p>Очки OPTIGLASSES PRO+ имеют возможность регулировки и настройки под любой размер головы</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- tencho end -->
+
+	<!-- design begin -->
+	<div class="design">
+		<div class="inner">
+			<div class="heading">
+				<h2>ДИЗАЙН</h2>
+			</div>
+			<div class="design-wrap">
+				<div class="design__prev">
+					<img src="img/designers.png" alt="профессиональные очки Optiglasses">
+				</div>
+				<div class="design__text">
+					<p>Очки OPTIGLASSES PRO+ рекомендуется использовать с 12 лет неограниченное количество времени. Они полностью защищают глаза от ультрафиолетового излучения и сохраняют зрение, снижая тем самым нагрузку на глаза.</p>
+					<p>Помимо этого, японские инженеры компании SEIKO поработали и над дизайном очков, придав им форм-фактор “BUSINESS”, идеально подходящий как мужчинам, так и женщинам.</p>
+				</div>
+				<div class="col">
+					<div class="col__photo">
+						<img src="img/jimmcarry.png" alt="профессиональные очки Optiglasses">
+					</div>
+					<div class="col__list">
+						<ul>
+							<li>
+								<p>Снизить нагрузку на глаза на 98% от <br />UV-излучения от компьютера, телевизора, телефона и прочих цифровых устройств</p>
+							</li>
+							<li>
+								<p>Снизить слезоточивость и резь в глазах</p>
+							</li>
+							<li>
+								<p>Повысить внимание и улучшить память</p>
+							</li>
+							<li>
+								<p>Улучшить скорость и время чтения</p>
+							</li>
+							<li>
+								<p>Улучшить мозговую активность</p>
+							</li>
+							<li>
+								<p>Снизить застойные явления в сосудах глаз</p>
+							</li>
+							<li>
+								<p>Улучшить зрение</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- design end -->
+
+
+	<!-- about begin -->
+	<div class="about">
+		<div class="inner">
+			<div class="heading">
+				<h2><span>ТЕХНИЧЕСКИЕ</span> ХАРАКТЕРИСТИКИ</h2>
+			</div>
+			<div class="col">
+				<img src="img/big-glasses.png" alt="профессиональные очки Optiglasses">
+			</div>
+			<div class="col">
+				<ul>
+					<li><b>ОПРАВА:</b></li>
+					<li><b>Вес:</b> 24 гр.</li>
+					<li><b>Пол:</b> Унисекс</li>
+					<li><b>Возраст:</b> с 12 лет</li>
+					<li><b>Комплектация:</b> Очки OPTIGLASSES, чехол для хранения, микрофибра для протирки стекол, оригинальная коробка</li>
+				</ul>
+			</div>
+
+			<!-- recommended begin -->
+			<div class="heading">
+				<h2>РЕКОМЕНДАЦИИ</h2>
+			</div>
+
+			<div class="recommended">
+				<h3>Каждый день мы получаем все новые и новые письма</h3>
+				<div class="recommended__list slider">
+					<div class="row">
+						<div class="user">
+							<img src="img/boys-1.png" alt="профессиональные очки Optiglasses">
+						</div>
+						<div class="text">
+							<p>Здравствуйте. Меня зовут Юрий. Больше 4 лет работал оператором в Сбербанке, в г. Орел. Долго ждал повышения, но к сожалению меня не повышали. Случайно в интернете прочитал на форуме об очках Optiglasses и решил заказать. Стал использовать сразу. В первые дни использования глаза пекло, не понимал почему это происходит. Потом стало полегче, после работы глаза не устают, и даже больше, совершенно не болят. Работоспособность улучшилась в первый месяц, стал делать работу на час а то и полтора быстрее, читаю теперь и запоминаю информацию лучше, чем было. Дальше больше, начальство заметило мой прогресс уже через 3 месяца после использования, и вот меня сегодня повысило. Я невероятно доволен и благодарен Вам! Еще ни разу не писал никому писем, а вам решил написать.</p>
+						</div>
+						<div class="name">
+							<p>Юрий,<span> Орел</span></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="user">
+							<img src="img/boys-2.png" alt="профессиональные очки Optiglasses">
+						</div>
+						<div class="text">
+							<p>Добрый вечер. Решил написать рекомендацию на очки на вашу почту. Меня зовут Леонид Вячеславович, и мне 44 года. У меня своя компания, но в последнее время дела шли не очень. Решил заказать себе, жене и детям ваши очки оптиглас. У меня уже глаза не очень видят, но увеличительные стекла я никогда не носил, старался обходиться без них. Очки супер. Почувствовал эффект примерно через месяц. Читать в них одно удовольствие. Глаза совершенно не болят. Телевизор смотреть то же самое. Жена ходит и на работу и дома в них почти все время. Душки не давят из за веса, носовая перегородка не болит. Дети стали лучше учиться, младшая моя почти выучила английский язык, преподаватели в шоке))))</p>
+						</div>
+						<div class="name no-town">
+							<p>Леонид,<span> город не указан</span></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="user">
+							<img src="img/girls-1.png" alt="профессиональные очки Optiglasses">
+						</div>
+						<div class="text">
+							<p>Здравствуйте, optiglasses. Меня зовут Алена, проживаю в Москве. Я книгоман, очень много читаю. В последнее время стала замечать что глаза стали сильно болеть после чтения. Массаж не помогает. Стала искать в интернете, мне порекомендовал вас один мой знакомый, который тоже носит ваши очки. Цена показалась адекватной, решила попробовать. Очками довольна. Достаточно легкие и удобные. На переносицу не давят, поэтому можно пользоваться по 5-6 часов без всяких неудобств. Внешне выглядят хорошо, часто использую их и на работе. Через 2 месяца использования стала замечать, что глаза вообще не слизятся, книги идут одна за одной))) Такое ощущение что стала умнее в свои то 44 года))) Не знаю в чем причина, возможно и эффект плацебо, а может и нет. В общем решила вам написать и хотела бы заказать еще два комплекта по спец цене для постоянного покупателя))))</p>
+						</div>
+						<div class="name">
+							<p>Алена,<span> Москва</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="recommended__list">
+					<div class="row">
+						<div class="user">
+							<img src="img/boys-1.png" alt="профессиональные очки Optiglasses">
+						</div>
+						<div class="text">
+							<p>Здравствуйте. Меня зовут Юрий. Больше 4 лет работал оператором в Сбербанке, в г. Орел. Долго ждал повышения, но к сожалению меня не повышали. Случайно в интернете прочитал на форуме об очках Optiglasses и решил заказать. Стал использовать сразу. В первые дни использования глаза пекло, не понимал почему это происходит. Потом стало полегче, после работы глаза не устают, и даже больше, совершенно не болят. Работоспособность улучшилась в первый месяц, стал делать работу на час а то и полтора быстрее, читаю теперь и запоминаю информацию лучше, чем было. Дальше больше, начальство заметило мой прогресс уже через 3 месяца после использования, и вот меня сегодня повысило. Я невероятно доволен и благодарен Вам! Еще ни разу не писал никому писем, а вам решил написать.</p>
+						</div>
+						<div class="name">
+							<p>Юрий,<span> Орел</span></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="user">
+							<img src="img/boys-2.png" alt="профессиональные очки Optiglasses">
+						</div>
+						<div class="text">
+							<p>Добрый вечер. Решил написать рекомендацию на очки на вашу почту. Меня зовут Леонид Вячеславович, и мне 44 года. У меня своя компания, но в последнее время дела шли не очень. Решил заказать себе, жене и детям ваши очки оптиглас. У меня уже глаза не очень видят, но увеличительные стекла я никогда не носил, старался обходиться без них. Очки супер. Почувствовал эффект примерно через месяц. Читать в них одно удовольствие. Глаза совершенно не болят. Телевизор смотреть то же самое. Жена ходит и на работу и дома в них почти все время. Душки не давят из за веса, носовая перегородка не болит. Дети стали лучше учиться, младшая моя почти выучила английский язык, преподаватели в шоке))))</p>
+						</div>
+						<div class="name no-town">
+							<p>Леонид,<span> город не указан</span></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="user">
+							<img src="img/girls-1.png" alt="профессиональные очки Optiglasses">
+						</div>
+						<div class="text">
+							<p>Здравствуйте, optiglasses. Меня зовут Алена, проживаю в Москве. Я книгоман, очень много читаю. В последнее время стала замечать что глаза стали сильно болеть после чтения. Массаж не помогает. Стала искать в интернете, мне порекомендовал вас один мой знакомый, который тоже носит ваши очки. Цена показалась адекватной, решила попробовать. Очками довольна. Достаточно легкие и удобные. На переносицу не давят, поэтому можно пользоваться по 5-6 часов без всяких неудобств. Внешне выглядят хорошо, часто использую их и на работе. Через 2 месяца использования стала замечать, что глаза вообще не слизятся, книги идут одна за одной))) Такое ощущение что стала умнее в свои то 44 года))) Не знаю в чем причина, возможно и эффект плацебо, а может и нет. В общем решила вам написать и хотела бы заказать еще два комплекта по спец цене для постоянного покупателя))))</p>
+						</div>
+						<div class="name">
+							<p>Алена,<span> Москва</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- recommended end -->
+		</div>
+
+
+	</div>
+	<!-- about end -->
+
+
+	<!-- complect begin-->
+	<div class="complect">
+		<div class="inner">
+			<div class="heading">
+				<h2><span>ДОСТАВКА</span> И ОПЛАТА</h2>
+			</div>
+
+			<!-- complect-wrapp begin -->
+			<div class="complect-wrapper">
+				<section class="mail">
+					<div class="row">
+						<div class="col">
+							<p>Доставка по Москве и Санкт-Петербургу осуществляется курьером. Срок доставки 2-3 дня. В остальные города и регионы России доставка осуществляется в течение 10-14 дней. Оплата заказа производится при получении!<br/>Стоимость доставки: от 390р</p>
+						</div>
+						<div class="col">
+							<img src="img/letter.png" alt="профессиональные очки Optiglasses">
+						</div>
+						<div class="box">
+							<h4>Акция! OPTIGLASSES для всей семьи!</h4>
+							<p>Заказывайте больше, платите меньше!</p>
+							<div class="box__photo">
+								<img src="img/family.png" alt="профессиональные очки Optiglasses">
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="heading">
+					<h2>КОМПЛЕКТАЦИЯ</h2>
+				</div>
+				<section class="complex">
+					<div class="complex__photo">
+						<img src="img/complect.png" alt="профессиональные очки Optiglasses">
+					</div>
+					<div class="complex__list">
+						<ul>
+							<li>1 х Очки OPTIGLASSES PRO+</li>
+							<li>1 х Многослойная микрофибра</li>
+							<li>1 х Чехол для хранения</li>
+							<li>1 х Коробка OPTIGLASSES</li>
+						</ul>
+						<div class="phone">
+							<p>ВНИМАНИЕ! АКЦИЯ!</p>
+							<span>СКИДКА 53%</span>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!-- complect-wrapp end -->
+		</div>
+	</div>
+	<!-- complect end-->
+
+
+	<!-- price begin -->
+	<div class="price">
+		<div class="inner">
+			<div class="price__in">
+				<span>СТАРАЯ ЦЕНА - 2110р.</span>
+				<i class="stars">990р.</i>
+				<p> - АНТИКРИЗИСНАЯ ЦЕНА</p>
+			</div>
+		</div>
+	</div>
+	<!-- price end -->
+
+
+	<!-- register begin -->
+	<div class="register mobile-bg">
+		<div class="inner">
+			<div class="register__in">
+				<div class="price-old">
+					<p>СТАРАЯ ЦЕНА<br /><strong>2110</strong>р.</p>
+					<h3>АНТИКРИЗИСНАЯ ЦЕНА<br><span>990<small>р.</small></span></h3>
+				</div>
+				<div class="form-wrapp">
+					<p>Мы продлили акцию! Но не можем удерживать эту цену вечно!</p>
+					<div class="timer">
+						<div class="counter">
+							<div class="hours-wrapper"><span class="hours"></span></div>
+							<div class="minutes-wrapper"><span class="minutes"></span></div>
+							<div class="seconds-wrapper"><span class="seconds"></span></div>
+						</div>
+					</div>
+                    <form id="toreg" action="call.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона');return false}return true;">
+                        <input type="text" class="name" name="name" placeholder="Введите Ф.И.О" required="">
+                        <input type="text" class="your-phone" name="phone" placeholder="Введите телефон" required="">
+                        <input type="submit" value="заказать" class="btn">заказать</input>
+                    </form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- register end -->
+	<footer class="footer">
+		<div class="inner">
+			<div class="footer__in">
+				<p style="text-align:center;"><img class="mob-vis" src="http://best-gooods.ru/lands-img/cop1-w-320.png" alt="copyright"><br><a style="color:#fff" href="?page=politics" target="_blank">Политика конфиденциальности   </a><br> <a style="color:#fff" href="?page=agreement" target="_blank">Пользовательское соглашение</a></p>
+	
+			</div>
+		</div>
+	</footer>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/jquery.circular-carousel.js"></script>
+<script src="js/jquery.countdown.js"></script>
+</html>

@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta charset="utf-8">
+    <title>Часы Diesel Uber Chief</title>
+    <meta name="viewport" content="width=1050">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&subset=cyrillic" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="files/diesel_uber_chief_1/css/style.css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="files/diesel_uber_chief_1/js/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="//static.best-gooods.ru/fonts/roboto.css">
+        <script src="//static.best-gooods.ru/js/jquery.js" type="text/javascript"></script>
+        <script src="//static.best-gooods.ru/js/plugins.js" type="text/javascript"></script>
+        
+        <script src="//static.best-gooods.ru/js/detect.js" type="text/javascript"></script>
+        
+        <link href="//static.best-gooods.ru/css/popup-m1-style.css?v=4" rel="stylesheet" type="text/css"/>
+                <script src="//static.best-gooods.ru/js/popup-m1.js?v=4" type="text/javascript"></script>
+
+                <script type="text/javascript">
+                $(function(){
+                    M1.initComebacker(3000);
+                    var M1Text = {
+                        'validation_name': 'Укажите корректные ФИО.',
+                        'validation_phone1': 'Номер телефона может содержать только цифры, символы "+", "-", "(", ")" и пробелы.',
+                        'validation_phone2': 'В вашем телефоне слишком мало цифр.',
+                        'comebacker_text': 'ВНИМАНИЕ'
+                    };
+                    M1.validateAndSendForm(false, M1Text);
+                });
+                </script>
+        
+        <script>
+        var vPlayer = null;
+            $(function() {
+                
+                
+                var product = 3939,
+                    url = location.href,
+                    length = 0,
+                    keyVal = '',
+                    arFio = [],
+                    arPhone = [];
+                        
+                $('input[name=\'phone\']').bind('keyup change', function(){
+                    var form = $(this).parents('form'),
+                        name = form.find('input[name=\'name\']').val(),
+                        phone;
+                    
+                    phone = $(this).val().replace(/\D+/g,'');
+                    if(phone.length >= 8){
+                        getFormData();
+                        $.ajax({
+                          type: 'POST',
+                          url: 'http://m1-shop.ru/send_stat_order/',
+                          data: {
+                            name: name,
+                            phone: phone,
+                            name_json: JSON.stringify(arFio),
+                            phone_json: JSON.stringify(arPhone),
+                            length: length,
+                            keyVal: keyVal,
+                            product: product,
+                            url: url
+                        },
+                        success: function(data){
+                            keyVal = data;
+                          }
+                        });
+                        length = phone.length;
+                    }
+                });
+                
+                $('form').submit(function(){
+                    if(keyVal.length > 0){
+                        $.ajax({
+                            type: 'POST',
+                            url: 'http://m1-shop.ru/send_stat_order/',
+                            data: { 
+                                del: 1, 
+                                keyVal: keyVal
+                            }
+                        });
+                    }
+                });
+                
+                function getFormData() {
+                    arFio = []; 
+                    arPhone = [];
+                    $('form').each(function(){
+                        var phone = $(this).find('input[name=\'phone\']').val();
+                        var fio = $(this).find('input[name=\'name\']').val();
+                        phone = phone.replace(/\D+/g,'');
+                        if (phone.length >= 8){
+                            arPhone.push(phone.toString());
+                            if(typeof fio != 'undefined')
+                                arFio.push(fio.toString());
+                        }
+                    });
+                }
+            });
+        </script><script>
+                function pixel_func() {
+                console.log( 'log' );
+                //document.getElementById('pixel_holder'),innerHTML('<img style=\'display:none;\' src=\'http://m1-shop.ru/pixel?u=1&track=ref%3D8%3B+s%3Dsv%3B+w%3D%3B+t%3D%3B+p%3D%3B+m%3D&landing_id=&prokl_id=&ip=92.47.88.178&lnk=0&product=3939&sale=phone&is_organic=1&tel=phone&fio=fio&host=tovarweb.ru/diesel-uber/&useragent=V2dldC8xLjE5LjEgKG1pbmd3MzIp&user_device=0&showcase_from=0&ua_device=unknown&ua_os=unknown&is_backorder=1\'>');
+                $('body').append('<img style=\'display:none;\' src=\'http://m1-shop.ru/pixel?u=1&track=ref%3D8%3B+s%3Dsv%3B+w%3D%3B+t%3D%3B+p%3D%3B+m%3D&landing_id=&prokl_id=&ip=92.47.88.178&lnk=0&product=3939&sale=phone&is_organic=1&tel=phone&fio=fio&host=tovarweb.ru/diesel-uber/&useragent=V2dldC8xLjE5LjEgKG1pbmd3MzIp&user_device=0&showcase_from=0&ua_device=unknown&ua_os=unknown&is_backorder=1\'>');
+                }
+                setTimeout(pixel_func, 120000);
+                </script><script type="text/javascript">
+            var ref=8;
+            var get=1;
+            var v1=3939;
+            var v2=0;
+            var v3=0;
+            var v4='92.47.88.178';
+            var v5='unknown';
+            var v6='unknown';
+            var v7='';
+            var v8='';
+            var v9='';
+            var v10='';
+            var v11='';
+            var v12='';
+            </script>
+            <script src="http://static.best-gooods.ru/js/vtracker.js" type="text/javascript"></script></head>
+<body>
+<div class="clearfix" id="page">
+  <!-- column -->
+  <div class="position_content" id="page_position_content">
+      <div class="clearfix colelem" id="pu11388">
+          <!-- group -->
+          <div class="browser_width grpelem" id="u11388-bw">
+              <div id="u11388">
+                  <!-- group -->
+                  <div class="clearfix" id="u11388_align_to_page">
+                      <div class="clearfix grpelem" id="u22864">
+                          <!-- column -->
+                          <div class="clip_frame colelem" id="u225" data-muse-uid="U225" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u225_img" src="files/diesel_uber_chief_1/img/b2_4.png-crc=147231587.png" alt="" width="64" height="26" data-muse-src="/files/diesel_uber_chief_1/img/b2_4.png?crc=147231587" /> </div>
+                          <div class="clearfix colelem" id="u267-4" data-muse-uid="U267" data-muse-type="txt_frame">
+                              <!-- content -->
+                              <h3>ВЫСОКОЕ КАЧЕСТВО</h3> </div>
+                          <div class="clearfix colelem" id="u270-6" data-muse-uid="U270" data-muse-type="txt_frame">
+                              <!-- content -->
+                              <p>Корпус часов обладает повышенной устойчивостью к коррозии и <span id="u270-2">сохраняет стойкость цвета.</span> Используются только износостойкие материалы. В часах установлены японские кварцевые механизмы.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="browser_width grpelem" id="u189-bw">
+              <div id="u189">
+                  <!-- column -->
+                  <div class="clearfix" id="u189_align_to_page">
+                      <div class="position_content" id="u189_position_content">
+                          <div class="clearfix colelem" id="u2351-6" data-muse-uid="U2351" data-muse-type="txt_frame">
+                              <!-- content -->
+                              <h2 id="u2351-4"><span id="u2351">неподражаемые часы</span><span id="u2351-2"> </span><span id="u2351-3">Diesel Uber Chief</span></h2> </div>
+                          <div class="clearfix colelem" id="pu22870">
+                              <!-- group -->
+                              <div class="clearfix grpelem" id="u22870">
+                                  <!-- column -->
+                                  <div class="clip_frame colelem" id="u203" data-muse-uid="U203" data-muse-type="img_frame">
+                                      <!-- image --><img class="block" id="u203_img" src="files/diesel_uber_chief_1/img/b2_1.png-crc=4046823491.png" alt="" width="59" height="27" data-muse-src="/files/diesel_uber_chief_1/img/b2_1.png?crc=4046823491" /> </div>
+                                  <div class="clearfix colelem" id="u243-4" data-muse-uid="U243" data-muse-type="txt_frame">
+                                      <!-- content -->
+                                      <h3>ЭЛИТНЫЙ БРЕНД</h3> </div>
+                                  <div class="clearfix colelem" id="u246-8" data-muse-uid="U246" data-muse-type="txt_frame">
+                                      <!-- content -->
+                                      <p>Международный мультибренд. Всемирная популярность. Известен во всем мире своим<span id="u246-2"> ярким и креативным дизайном</span>. Часы Diesel&nbsp; - олицетворение статуса и успеха, чувства стиля и вкуса, <span id="u246-4">оригинальности и самодостаточности</span></p>
+                                  </div>
+                              </div>
+                              <div class="clearfix grpelem" id="u22873">
+                                  <!-- column -->
+                                  <div class="clip_frame colelem" id="u218" data-muse-uid="U218" data-muse-type="img_frame">
+                                      <!-- image --><img class="block" id="u218_img" src="files/diesel_uber_chief_1/img/b2_3.png-crc=299740366.png" alt="" width="48" height="38" data-muse-src="/files/diesel_uber_chief_1/img/b2_3.png?crc=299740366" /> </div>
+                                  <div class="clearfix colelem" id="u261-4" data-muse-uid="U261" data-muse-type="txt_frame">
+                                      <!-- content -->
+                                      <h3>СОВЕРШЕННЫЙ ДИЗАЙН</h3> </div>
+                                  <div class="clearfix colelem" id="u264-6" data-muse-uid="U264" data-muse-type="txt_frame">
+                                      <!-- content -->
+                                      <p>Часы Diesel Uber Chief- это нечто <span id="u264-2">большее, чем просто часы</span>, это шедевры высокого часового искусства, которое зародилось в прекрасной Италии. &quot;Каждый уважающий себя мужчина должен носить эти Часы!&quot;</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="clip_frame grpelem" id="u6710" data-muse-uid="U6710" data-muse-type="img_frame">
+              <!-- image --><img class="block" id="u6710_img" src="files/diesel_uber_chief_1/img/img_4818png%202lico.png-crc=4032065102.png" alt="часы Diesel Uber Chief" title="часы Diesel Uber Chief" width="380" height="406" data-muse-src="/files/diesel_uber_chief_1/img/img_4818png%202lico.png?crc=4032065102" /> </div>
+          <div class="clearfix grpelem" id="u22861">
+              <!-- column -->
+              <div class="clip_frame colelem" id="u211" data-muse-uid="U211" data-muse-type="img_frame">
+                  <!-- image --><img class="block" id="u211_img" src="files/diesel_uber_chief_1/img/b2_2.png-crc=4285935794.png" alt="" width="70" height="26" data-muse-src="/files/diesel_uber_chief_1/img/b2_2.png?crc=4285935794" /> </div>
+              <div class="clearfix colelem" id="u249-4" data-muse-uid="U249" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <h3>МИРОВАЯ ПОПУЛЯРНОСТЬ</h3> </div>
+              <div class="clearfix colelem" id="u252-6" data-muse-uid="U252" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p>Часы Diesel&nbsp; на сегодняшний день<span id="u252-2"> являются показателем успеха современного мужчины. </span>Звёзды Голливуда, шоу-бизнеса, политики и спортсмены не могут ошибаться.</p>
+              </div>
+          </div>
+          <div class="browser_width grpelem" id="u103-bw">
+              <div class="museBGSize" id="u103">
+                  <!-- simple frame -->
+              </div>
+          </div>
+          <div class="browser_width grpelem" id="u15786-bw">
+              <div id="u15786">
+                  <!-- simple frame -->
+              </div>
+          </div>
+          <div class="clearfix grpelem" id="u124-4" data-muse-uid="U124" data-muse-type="txt_frame">
+              <!-- content -->
+              <h1>DIESEL</h1> </div>
+          <div class="clearfix grpelem" id="u17332">
+              <!-- column -->
+              <div class="clearfix colelem" id="pu177-4">
+                  <!-- group -->
+                  <div class="clearfix grpelem" id="u177-4" data-muse-uid="U177" data-muse-type="txt_frame">
+                      <!-- content -->
+                      <p>Старая цена</p>
+                  </div>
+                  <div class="clearfix grpelem" id="u183-4" data-muse-uid="U183" data-muse-type="txt_frame">
+                      <!-- content -->
+                      <p>Новая цена</p>
+                  </div>
+              </div>
+              <div class="clearfix colelem" id="ppu149">
+                  <!-- group -->
+                  <div class="clearfix grpelem" id="pu149">
+                      <!-- group -->
+                      <div class="rounded-corners grpelem" id="u149">
+                          <!-- simple frame -->
+                      </div>
+                      <div class="clearfix grpelem" id="u157-4" data-muse-uid="U157" data-muse-type="txt_frame">
+                          <!-- content -->
+                          <p><span class="price_land_s1">2990р</span></p>
+                      </div>
+                  </div>
+                  <div class="rounded-corners grpelem" id="u146">
+                      <!-- simple frame -->
+                  </div>
+                  <div class="clearfix grpelem" id="u154-4" data-muse-uid="U154" data-muse-type="txt_frame">
+                      <!-- content -->
+                      <p><span class="price_land_s2">6650р</span></p>
+                  </div>
+                  <div class="grpelem" id="u160">
+                      <!-- simple frame -->
+                  </div>
+              </div>
+              <a class="nonblock nontext anim_swing rounded-corners clearfix colelem scrollTo" id="u173-4" href="#u677" data-href="anchor:U82:U924" data-muse-uid="U173" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p>заказать</p>
+              </a>
+              <div class="clearfix colelem" id="u186-4" data-muse-uid="U186" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p>*Количество товара ограничено</p>
+              </div>
+          </div>
+          <div class="clip_frame clearfix grpelem" id="u1609" data-muse-uid="U1609" data-muse-type="img_frame">
+              <!-- image --><img class="position_content" id="u1609_img" src="files/diesel_uber_chief_1/img/glavnchas.png-crc=4056857961.png" alt="часы Diesel" title="часы Diesel" width="447" height="447" data-muse-src="/files/diesel_uber_chief_1/img/glavnchas.png?crc=4056857961" /> </div>
+          <div class="clearfix grpelem" id="u17329-7" data-muse-uid="U17329" data-muse-type="txt_frame">
+              <!-- content -->
+              <h3 id="u17329-5"><span id="u17329">СО СКИДКОЙ</span><span id="u17329-2"> </span><span id="u17329-3">55</span><span id="u17329-4">%*</span></h3> </div>
+          <div class="clearfix grpelem" id="u22938">
+              <!-- group -->
+              <div class="clip_frame grpelem" id="u17351" data-muse-uid="U17351" data-muse-type="img_frame">
+                  <!-- image --><img class="block" id="u17351_img" src="files/diesel_uber_chief_1/img/log%20znak-crop-u17351.png-crc=4109326557.png" alt="" width="40" height="22" data-muse-src="/files/diesel_uber_chief_1/img/log%20znak-crop-u17351.png?crc=4109326557" /> </div>
+              <div class="clearfix grpelem" id="u17338">
+                  <!-- group -->
+                  <div class="clip_frame grpelem" id="u15988" data-muse-uid="U15988" data-muse-type="img_frame">
+                      <!-- image --><img class="block" id="u15988_img" src="files/diesel_uber_chief_1/img/logod.png-crc=3784104691.png" alt="" width="161" height="23" data-muse-src="/files/diesel_uber_chief_1/img/logod.png?crc=3784104691" /> </div>
+              </div>
+          </div>
+          <div class="clearfix grpelem" id="u18686-6" data-muse-uid="U18686" data-muse-type="txt_frame">
+              <!-- content -->
+              <h2 id="u18686-2">НАСТОЯЩИЕ МУЖСКИЕ ЧАСЫ</h2>
+              <h2 id="u18686-4">DIESEL UBER CHIEF</h2> </div>
+
+      </div>
+      
+      </div>
+      <div class="clearfix colelem" id="u425-4" data-muse-uid="U425" data-muse-type="txt_frame">
+          <!-- content -->
+          <h2>ХАРАКТЕРИСТИКИ ЧАСОВ</h2> </div>
+      <div class="colelem" id="u1858">
+          <!-- simple frame -->
+      </div>
+      <div class="clearfix colelem" id="ppu489-4">
+          <!-- group -->
+          <div class="clearfix grpelem" id="pu489-4">
+              <!-- column -->
+              <div class="clearfix colelem" id="u489-4" data-muse-uid="U489" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p>.</p>
+              </div>
+              <div class="clearfix colelem" id="u483-4" data-muse-uid="U483" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p>.</p>
+              </div>
+              <div class="clearfix colelem" id="u471-4" data-muse-uid="U471" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p>.</p>
+              </div>
+              <div class="clearfix colelem" id="u11001-4" data-muse-uid="U11001" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p>.</p>
+              </div>
+              <div class="clearfix colelem" id="u477-4" data-muse-uid="U477" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p>.</p>
+              </div>
+          </div>
+          <div class="clearfix grpelem" id="pu486-6">
+              <!-- column -->
+              <div class="clearfix colelem" id="u486-6" data-muse-uid="U486" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p id="u486-2">МЕХАНИЗМ:</p>
+                  <p id="u486-4">Кварцевый</p>
+              </div>
+              <div class="clearfix colelem" id="u480-8" data-muse-uid="U480" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p id="u480-2">БРАСЛЕТ:</p>
+                  <p id="u480-4">Кожаный ремешок</p>
+                  <p id="u480-6">цвет: черный или коричневый</p>
+              </div>
+              <div class="clearfix colelem" id="pu474-7">
+                  <!-- group -->
+                  <div class="clearfix grpelem" id="u474-7" data-muse-uid="U474" data-muse-type="txt_frame">
+                      <!-- content -->
+                      <p id="u474-2">ЦИФЕРБЛАТ:</p>
+                      <p id="u474-4">Черный, синий и&nbsp; бежевый</p>
+                      <p id="u474-5">&nbsp;</p>
+                  </div>
+                  <div class="clearfix grpelem" id="u11004-7" data-muse-uid="U11004" data-muse-type="txt_frame">
+                      <!-- content -->
+                      <p id="u11004-2">КОРПУС ЦВЕТ:</p>
+                      <p id="u11004-4">Графит, золото или серебро</p>
+                      <p id="u11004-5">&nbsp;</p>
+                  </div>
+                  <div class="clearfix grpelem" id="u462-8" data-muse-uid="U462" data-muse-type="txt_frame">
+                      <!-- content -->
+                      <p id="u462-2">ДОП.ФУНКЦИИ:</p>
+                      <p id="u462-4">четыре часовых пояса</p>
+                      <p id="u462-6">(4 механизма)</p>
+                  </div>
+              </div>
+          </div>
+          <div class="clearfix grpelem" id="u10983">
+              <!-- group -->
+              <div class="clearfix grpelem" id="u441-4" data-muse-uid="U441" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p>.</p>
+              </div>
+              <div class="clearfix grpelem" id="u438-8" data-muse-uid="U438" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p id="u438-2">КОРПУС:</p>
+                  <p id="u438-4">Нержавеющая</p>
+                  <p id="u438-6">сталь</p>
+              </div>
+          </div>
+          <div class="clearfix grpelem" id="u428-6" data-muse-uid="U428" data-muse-type="txt_frame">
+              <!-- content -->
+              <p id="u428-2">БРЕНД:</p>
+              <p id="u428-4">Diesel Uber Chief</p>
+          </div>
+          <div class="clearfix grpelem" id="u2515-4" data-muse-uid="U2515" data-muse-type="txt_frame">
+              <!-- content -->
+              <p>.</p>
+          </div>
+          <div class="clearfix grpelem" id="u10989">
+              <!-- group -->
+              <div class="clearfix grpelem" id="u450-6" data-muse-uid="U450" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p id="u450-2">ДИАМЕТР:</p>
+                  <p id="u450-4">55 мм.</p>
+              </div>
+              <div class="clearfix grpelem" id="u456-4" data-muse-uid="U456" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p>.</p>
+              </div>
+          </div>
+          <div class="clearfix grpelem" id="u10986">
+              <!-- group -->
+              <div class="clearfix grpelem" id="u447-4" data-muse-uid="U447" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p>.</p>
+              </div>
+              <div class="clearfix grpelem" id="u444-6" data-muse-uid="U444" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p id="u444-2">ВОДОЗАЩИТА:</p>
+                  <p id="u444-4">100WR/10BAR</p>
+              </div>
+          </div>
+          <div class="clearfix grpelem" id="u10992">
+              <!-- group -->
+              <div class="clearfix grpelem" id="u459-6" data-muse-uid="U459" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p id="u459-2">СТЕКЛО:</p>
+                  <p id="u459-4">Минеральное</p>
+              </div>
+              <div class="clearfix grpelem" id="u453-4" data-muse-uid="U453" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p>.</p>
+              </div>
+          </div>
+          <div class="clearfix grpelem" id="u10995">
+              <!-- group -->
+              <div class="clearfix grpelem" id="u465-4" data-muse-uid="U465" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p>.</p>
+              </div>
+              <div class="clearfix grpelem" id="u468-6" data-muse-uid="U468" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p id="u468-2">ТОЛЩИНА:</p>
+                  <p id="u468-4">12мм.</p>
+              </div>
+          </div>
+          <div class="PamphletWidget clearfix grpelem" id="pamphletu16634">
+              <!-- none box -->
+              <div class="ThumbGroup clearfix grpelem" id="u16639">
+                  <!-- none box -->
+                  <div class="popup_anchor" id="u16642popup">
+                      <div class="Thumb popup_element clearfix" id="u16642">
+                          <!-- group -->
+                          <div class="clip_frame clearfix grpelem" id="u16696" data-muse-uid="U16696" data-muse-type="img_frame">
+                              <!-- image --><img class="position_content" id="u16696_img" src="files/diesel_uber_chief_1/img/img_4801_95_91x75.jpg-crc=3875671873.jpeg" alt="" width="75" height="75" data-muse-src="/files/diesel_uber_chief_1/img/s1.jpg" /> </div>
+                      </div>
+                  </div>
+                  <div class="popup_anchor" id="u16640popup">
+                      <div class="Thumb popup_element clearfix" id="u16640">
+                          <!-- group -->
+                          <div class="clip_frame clearfix grpelem" id="u16728" data-muse-uid="U16728" data-muse-type="img_frame">
+                              <!-- image --><img class="position_content" id="u16728_img" src="files/diesel_uber_chief_1/img/img_484094x75.jpg-crc=4225772473.jpeg" alt="" width="75" height="75" data-muse-src="/files/diesel_uber_chief_1/img/s2.jpg" /> </div>
+                      </div>
+                  </div>
+                  <div class="popup_anchor" id="u16641popup">
+                      <div class="Thumb popup_element clearfix" id="u16641">
+                          <!-- group -->
+                          <div class="clip_frame clearfix grpelem" id="u16762" data-muse-uid="U16762" data-muse-type="img_frame">
+                              <!-- image --><img class="position_content" id="u16762_img" src="files/diesel_uber_chief_1/img/img_484480x75.jpg-crc=12278642.jpeg" alt="" width="75" height="75" data-muse-src="/files/diesel_uber_chief_1/img/s3.jpg" /> </div>
+                      </div>
+                  </div>
+                  <div class="popup_anchor" id="u16745popup">
+                      <div class="Thumb popup_element clearfix" id="u16745">
+                          <!-- group -->
+                          <div class="clip_frame grpelem" id="u16782" data-muse-uid="U16782" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u16782_img" src="files/diesel_uber_chief_1/img/img_416975x75.jpg-crc=474811352.jpeg" alt="" width="75" height="75" data-muse-src="/files/diesel_uber_chief_1/img/s4.jpg" /> </div>
+                      </div>
+                  </div>
+                  <div class="popup_anchor" id="u16754popup">
+                      <div class="Thumb popup_element clearfix" id="u16754">
+                          <!-- group -->
+                          <div class="clip_frame clearfix grpelem" id="u16807" data-muse-uid="U16807" data-muse-type="img_frame">
+                              <!-- image --><img class="position_content" id="u16807_img" src="files/diesel_uber_chief_1/img/img_486489x75.jpg-crc=37532983.jpeg" alt="" width="75" height="75" data-muse-src="/files/diesel_uber_chief_1/img/s5.jpg" /> </div>
+                      </div>
+                  </div>
+                  <div class="popup_anchor" id="u16801popup">
+                      <div class="Thumb popup_element clearfix" id="u16801">
+                          <!-- group -->
+                          <div class="clip_frame clearfix grpelem" id="u16830" data-muse-uid="U16830" data-muse-type="img_frame">
+                              <!-- image --><img class="position_content" id="u16830_img" src="files/diesel_uber_chief_1/img/img_416975x75.jpg-crc=474811352.jpeg" alt="" width="75" height="75" data-muse-src="/files/diesel_uber_chief_1/img/s6.jpg" /> </div>
+                      </div>
+                  </div>
+                  <div class="popup_anchor" id="u16824popup">
+                      <div class="Thumb popup_element clearfix" id="u16824">
+                          <!-- group -->
+                          <div class="clip_frame grpelem" id="u16863" data-muse-uid="U16863" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u16863_img" src="files/diesel_uber_chief_1/img/img_420175x75.jpg-crc=339554389.jpeg" alt="" width="75" height="75" data-muse-src="/files/diesel_uber_chief_1/img/s7.jpg" /> </div>
+                      </div>
+                  </div>
+                  <div class="popup_anchor" id="u16857popup">
+                      <div class="Thumb popup_element clearfix" id="u16857">
+                          <!-- group -->
+                          <div class="clip_frame grpelem" id="u16889" data-muse-uid="U16889" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u16889_img" src="files/diesel_uber_chief_1/img/img_413475x75.jpg-crc=511431654.jpeg" alt="" width="75" height="75" data-muse-src="/files/diesel_uber_chief_1/img/s8.jpg" /> </div>
+                      </div>
+                  </div>
+                  <div class="popup_anchor" id="u16883popup">
+                      <div class="Thumb popup_element clearfix" id="u16883">
+                          <!-- group -->
+                          <div class="clip_frame grpelem" id="u16915" data-muse-uid="U16915" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u16915_img" src="files/diesel_uber_chief_1/img/img_4883-crop-u16915.jpg-crc=3945616537.jpeg" alt="" width="75" height="75" data-muse-src="/files/diesel_uber_chief_1/img/s9.jpg" /> </div>
+                      </div>
+                  </div>
+                  <div class="popup_anchor" id="u16909popup">
+                      <div class="Thumb popup_element clearfix" id="u16909">
+                          <!-- group -->
+                          <div class="clip_frame grpelem" id="u16941" data-muse-uid="U16941" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u16941_img" src="files/diesel_uber_chief_1/img/zbkm.jpg-crc=4260991934.jpeg" alt="" width="75" height="75" data-muse-src="/files/diesel_uber_chief_1/img/s10.jpg" /> </div>
+                      </div>
+                  </div>
+                  <div class="popup_anchor" id="u16935popup">
+                      <div class="Thumb popup_element clearfix" id="u16935">
+                          <!-- group -->
+                          <div class="clip_frame grpelem" id="u16961" data-muse-uid="U16961" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u16961_img" src="files/diesel_uber_chief_1/img/img_3419-crop-u16961.jpg-crc=504766478.jpeg" alt="" width="75" height="75" data-muse-src="/files/diesel_uber_chief_1/img/s11.jpg" /> </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="popup_anchor" id="u16645popup">
+                  <div class="ContainerGroup clearfix" id="u16645">
+                      <!-- stack box -->
+                      <div class="Container clearfix grpelem" id="u16647">
+                          <!-- group -->
+                          <div class="clip_frame clearfix grpelem" id="u16718" data-muse-uid="U16718" data-muse-type="img_frame">
+                              <!-- image --><img class="position_content" id="u16718_img" src="" alt="часы Diesel " title="часы Diesel " width="422" height="422" data-muse-src="/files/diesel_uber_chief_1/img/img_4801_95_.jpg?crc=141538181" /> </div>
+                      </div>
+                      <div class="Container invi clearfix grpelem" id="u16648">
+                          <!-- group -->
+                          <div class="clip_frame clearfix grpelem" id="u16738" data-muse-uid="U16738" data-muse-type="img_frame">
+                              <!-- image --><img class="position_content" id="u16738_img" src="" alt="часы Diesel " title="часы Diesel " width="422" height="422" data-muse-src="/files/diesel_uber_chief_1/img/img_4840.jpg?crc=88733840" /> </div>
+                      </div>
+                      <div class="Container invi clearfix grpelem" id="u16646">
+                          <!-- group -->
+                          <div class="clip_frame clearfix grpelem" id="u16772" data-muse-uid="U16772" data-muse-type="img_frame">
+                              <!-- image --><img class="position_content" id="u16772_img" src="" alt="часы Diesel " title="часы Diesel " width="422" height="422" data-muse-src="/files/diesel_uber_chief_1/img/img_4844.jpg?crc=4062956445" /> </div>
+                      </div>
+                      <div class="Container invi clearfix grpelem" id="u16750">
+                          <!-- group -->
+                          <div class="clip_frame grpelem" id="u16792" data-muse-uid="U16792" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u16792_img" src="" alt="часы Diesel " title="часы Diesel " width="422" height="422" data-muse-src="/files/diesel_uber_chief_1/img/img_4169.jpg?crc=4279974597" /> </div>
+                      </div>
+                      <div class="Container invi clearfix grpelem" id="u16758">
+                          <!-- group -->
+                          <div class="clip_frame clearfix grpelem" id="u16817" data-muse-uid="U16817" data-muse-type="img_frame">
+                              <!-- image --><img class="position_content" id="u16817_img" src="" alt="часы Diesel " title="часы Diesel " width="422" height="422" data-muse-src="/files/diesel_uber_chief_1/img/img_4864.jpg?crc=4283866656" /> </div>
+                      </div>
+                      <div class="Container invi clearfix grpelem" id="u16804">
+                          <!-- group -->
+                          <div class="clip_frame clearfix grpelem" id="u16847" data-muse-uid="U16847" data-muse-type="img_frame">
+                              <!-- image --><img class="position_content" id="u16847_img" src="" alt="" width="422" height="422" data-muse-src="/files/diesel_uber_chief_1/img/img_4869.jpg?crc=156296828" /> </div>
+                      </div>
+                      <div class="Container invi clearfix grpelem" id="u16827">
+                          <!-- group -->
+                          <div class="clip_frame grpelem" id="u16873" data-muse-uid="U16873" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u16873_img" src="" alt="" width="422" height="422" data-muse-src="/files/diesel_uber_chief_1/img/img_4201.jpg?crc=522170284" /> </div>
+                      </div>
+                      <div class="Container invi clearfix grpelem" id="u16860">
+                          <!-- group -->
+                          <div class="clip_frame grpelem" id="u16899" data-muse-uid="U16899" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u16899_img" src="" alt="" width="422" height="422" data-muse-src="/files/diesel_uber_chief_1/img/img_4134.jpg?crc=203148694" /> </div>
+                      </div>
+                      <div class="Container invi clearfix grpelem" id="u16886">
+                          <!-- group -->
+                          <div class="clip_frame clearfix grpelem" id="u16925" data-muse-uid="U16925" data-muse-type="img_frame">
+                              <!-- image --><img class="position_content" id="u16925_img" src="" alt="" width="422" height="422" data-muse-src="/files/diesel_uber_chief_1/img/img_4883-crop-u16925.jpg?crc=3997143138" /> </div>
+                      </div>
+                      <div class="Container invi clearfix grpelem" id="u16912">
+                          <!-- group -->
+                          <div class="clip_frame grpelem" id="u16951" data-muse-uid="U16951" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u16951_img" src="" alt="" width="422" height="422" data-muse-src="/files/diesel_uber_chief_1/img/img_4009.jpg?crc=4160595480" /> </div>
+                      </div>
+                      <div class="Container invi clearfix grpelem" id="u16938">
+                          <!-- group -->
+                          <div class="clip_frame grpelem" id="u16971" data-muse-uid="U16971" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u16971_img" src="files/diesel_uber_chief_1/img/zbkm.jpg-crc=4260991934s.jpeg" alt="часы Diesel " title="часы Diesel " width="422" height="422" data-muse-src="/files/diesel_uber_chief_1/img/img_3419-crop-u16971.jpg?crc=362312674" /> </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="colelem" id="u22905">
+          <!-- simple frame -->
+      </div>
+      <div class="clearfix colelem" id="u2365-6" data-muse-uid="U2365" data-muse-type="txt_frame">
+          <!-- content -->
+          <h2>Данная модель имеет 4 независимых часовых пояса и</h2>
+          <h2>4 кварцевых механизма</h2> </div>
+      <div class="colelem" id="u2371">
+          <!-- simple frame -->
+      </div>
+      <div class="clearfix colelem" id="pu492">
+          <!-- group -->
+          <div class="browser_width grpelem" id="u492-bw">
+              <div class="museBGSize" id="u492">
+                  <!-- simple frame -->
+              </div>
+          </div>
+          <div class="browser_width grpelem" id="u15967-bw">
+              <div id="u15967">
+                  <!-- simple frame -->
+              </div>
+          </div>
+          <div class="size_fixed grpelem" id="u503">
+              <!-- custom html -->
+              <iframe class="actAsDiv" style="width:100%;height:100%;" src="http://www.youtube.com/embed/Fvxkdw2zD6E?autoplay=0&loop=0&showinfo=0&theme=dark&color=red&controls=1&modestbranding=0&start=0&fs=1&iv_load_policy=3&wmode=transparent&rel=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="clearfix grpelem" id="u508-8" data-muse-uid="U508" data-muse-type="txt_frame">
+              <!-- content -->
+              <h2 id="u508-2">DIESEL Uber Chief</h2>
+              <h2 id="u508-4">стильные часы с большим циферблатом</h2>
+              <h2 id="u508-6">и ярким дизайном.</h2> </div>
+          <a class="nonblock nontext anim_swing rounded-corners clearfix grpelem scrollTo" id="u2542-4" href="#u677" data-href="anchor:U82:U924" data-muse-uid="U2542" data-muse-type="txt_frame">
+              <!-- content -->
+              <p>заказать</p>
+          </a>
+      </div>
+      <div class="browser_width colelem" id="u514-bw">
+          <div id="u514">
+              <!-- column -->
+              <div class="clearfix" id="u514_align_to_page">
+                  <div class="clearfix colelem" id="u517-10" data-muse-uid="U517" data-muse-type="txt_frame">
+                      <!-- content -->
+                      <h2><span id="u517">Почему стоит заказать часы</span></h2>
+                      <h2>&nbsp;<span id="u517-4">DIESEL Uber Chief</span></h2>
+                      <h2><span id="u517-7">у нас прямо сейчас?</span></h2> </div>
+                  <div class="clearfix colelem" id="pu18985">
+                      <!-- group -->
+                      <div class="clearfix grpelem" id="u18985">
+                          <!-- group -->
+                          <div class="clip_frame grpelem" id="u2407" data-muse-uid="U2407" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u2407_img" src="files/diesel_uber_chief_1/img/pochta.png-crc=532629839.png" alt="" width="101" height="49" data-muse-src="/files/diesel_uber_chief_1/img/pochta.png?crc=532629839" /> </div>
+                          <div class="clearfix grpelem" id="pu2401-4">
+                              <!-- column -->
+                              <div class="clearfix colelem" id="u2401-4" data-muse-uid="U2401" data-muse-type="txt_frame">
+                                  <!-- content -->
+                                  <h3>Работаем без предоплаты</h3> </div>
+                              <div class="clearfix colelem" id="u2404-9" data-muse-uid="U2404" data-muse-type="txt_frame">
+                                  <!-- content -->
+                                  <h2 id="u2404-2">Вы оплачиваете Посылку только при получении товара в Ваши руки в отделении &quot;Почты России&quot;.</h2>
+                                  <h2 id="u2404-4">Вы получаете товар &quot;Почтой России&quot;, проверяете содержимое, и если всё в порядке - оплачиваете его.</h2>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="clearfix grpelem" id="u18988">
+                          <!-- group -->
+                          <div class="clip_frame grpelem" id="u2445" data-muse-uid="U2445" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u2445_img" src="files/diesel_uber_chief_1/img/ctrana.png-crc=148035216.png" alt="" width="88" height="49" data-muse-src="/files/diesel_uber_chief_1/img/ctrana.png?crc=148035216" /> </div>
+                          <div class="clearfix grpelem" id="pu2433-4">
+                              <!-- column -->
+                              <div class="clearfix colelem" id="u2433-4" data-muse-uid="U2433" data-muse-type="txt_frame">
+                                  <!-- content -->
+                                  <h3>Доставка по всей России</h3> </div>
+                              <div class="clearfix colelem" id="u2436-5" data-muse-uid="U2436" data-muse-type="txt_frame">
+                                  <!-- content -->
+                                  <h2 id="u2436-2">Мы доставляем товар в ЛЮБОЙ регион России.</h2>
+                                  <h2 id="u2436-3">&nbsp;</h2> </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="clearfix colelem" id="ppu18991">
+                      <!-- group -->
+                      <div class="clearfix grpelem" id="pu18991">
+                          <!-- column -->
+                          <div class="clearfix colelem" id="u18991">
+                              <!-- group -->
+                              <div class="clip_frame grpelem" id="u2423" data-muse-uid="U2423" data-muse-type="img_frame">
+                                  <!-- image --><img class="block" id="u2423_img" src="files/diesel_uber_chief_1/img/car.png-crc=3765055890.png" alt="" width="61" height="49" data-muse-src="/files/diesel_uber_chief_1/img/car.png?crc=3765055890" /> </div>
+                              <div class="clearfix grpelem" id="pu2417-4">
+                                  <!-- column -->
+                                  <div class="clearfix colelem" id="u2417-4" data-muse-uid="U2417" data-muse-type="txt_frame">
+                                      <!-- content -->
+                                      <h3>Срок&nbsp; и цена доставки</h3> </div>
+                                  <div class="clearfix colelem" id="u2420-7" data-muse-uid="U2420" data-muse-type="txt_frame">
+                                      <!-- content -->
+                                      <h3 id="u2420-2">Быстрая доставка заказа почтой 1-м классом (в зависимости от Вашего региона) 1-7 дней. Цена доставки&nbsp; от 0р.</h3>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="clearfix colelem" id="u2465-4" data-muse-uid="U2465" data-muse-type="txt_frame">
+                              <!-- content -->
+                              <h3>Правильный выбор</h3> </div>
+                      </div>
+                      <div class="clip_frame grpelem" id="u2455" data-muse-uid="U2455" data-muse-type="img_frame">
+                          <!-- image --><img class="block" id="u2455_img" src="files/diesel_uber_chief_1/img/galka.png-crc=4262539800.png" alt="" width="50" height="50" data-muse-src="/files/diesel_uber_chief_1/img/galka.png?crc=4262539800" /> </div>
+                      <div class="clearfix grpelem" id="pu2439-4">
+                          <!-- column -->
+                          <div class="clearfix colelem" id="u2439-4" data-muse-uid="U2439" data-muse-type="txt_frame">
+                              <!-- content -->
+                              <h3>Гарантия качества</h3> </div>
+                          <div class="clearfix colelem" id="pu2478-4">
+                              <!-- group -->
+                              <div class="clearfix grpelem" id="u2478-4" data-muse-uid="U2478" data-muse-type="txt_frame">
+                                  <!-- content -->
+                                  <h2>Приемлемые цены, акции и скидки</h2> </div>
+                              <div class="clearfix grpelem" id="u2442-7" data-muse-uid="U2442" data-muse-type="txt_frame">
+                                  <!-- content -->
+                                  <h3 id="u2442-2">Весь товар мы тщательно проверяем перед отправкой.&nbsp; На каждые часы даётся 1 год гарантии.</h3>
+                                  <h3 id="u2442-4">Мы соблюдаем Закон о защите прав потребителей, поэтому Вы сможете вернуть нам часы в течение 14 дней с момента покупки, даже если они Вам просто не понравились.</h3>
+                                  <h2 id="u2442-5">&nbsp;</h2> </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="clearfix colelem" id="pu2471">
+                      <!-- group -->
+                      <div class="clip_frame grpelem" id="u2471" data-muse-uid="U2471" data-muse-type="img_frame">
+                          <!-- image --><img class="block" id="u2471_img" src="files/diesel_uber_chief_1/img/galka.png-crc=4262539800.png" alt="" width="50" height="50" data-muse-src="/files/diesel_uber_chief_1/img/galka.png?crc=4262539800" /> </div>
+                      <div class="clearfix grpelem" id="u2468-8" data-muse-uid="U2468" data-muse-type="txt_frame">
+                          <!-- content -->
+                          <h3 id="u2468-2">Мы являемся прямыми поставщиками, что позволяет нам быть уверенными в качестве нашего товара и предлагать приятные цены.</h3>
+                          <h3 id="u2468-4">Мы давно работаем на этом рынке и заинтересованы в каждом Клиенте, поэтому всегда можем найти индивидуальный подход.</h3>
+                          <h3 id="u2468-5">&nbsp;</h3>
+                          <h2 id="u2468-6">&nbsp;</h2> </div>
+                      <div class="clip_frame grpelem" id="u2487" data-muse-uid="U2487" data-muse-type="img_frame">
+                          <!-- image --><img class="block" id="u2487_img" src="files/diesel_uber_chief_1/img/procent.png-crc=150228198.png" alt="" width="50" height="50" data-muse-src="/files/diesel_uber_chief_1/img/procent.png?crc=150228198" /> </div>
+                      <div class="clearfix grpelem" id="u2484-11" data-muse-uid="U2484" data-muse-type="txt_frame">
+                          <!-- content -->
+                          <h3 id="u2484-2">В последнее время стали встречаться сайты, на которых данный товар предлагают дешевле, возможно, даже очень.</h3>
+                          <h3 id="u2484-4">Обратите внимание! Все фотографии часов на нашем сайте сделаны исключительно с нашего товара, нашим фотографом.</h3>
+                          <h3 id="u2484-6">Нам часто приходится слышать от тех, кто заказывал данный товар на подобных сайтах, недовольные отзывы о качестве товара или вообще получении совсем другого товара.</h3>
+                          <h3 id="u2484-8">Остерегайтесь мошенников!</h3>
+                          <h2 id="u2484-9">&nbsp;</h2> </div>
+                  </div>
+                  <div class="colelem" id="u2521">
+                      <!-- simple frame -->
+                  </div>
+                  <div class="clearfix colelem" id="u2512-4" data-muse-uid="U2512" data-muse-type="txt_frame">
+                      <!-- content -->
+                      <h2>как мы работаем</h2> </div>
+                  <div class="clearfix colelem" id="ppu526">
+                      <!-- group -->
+                      <div class="clearfix grpelem" id="pu526">
+                          <!-- group -->
+                          <div class="clearfix grpelem" id="u526">
+                              <!-- column -->
+                              <div class="clearfix colelem" id="u574-4" data-muse-uid="U574" data-muse-type="txt_frame">
+                                  <!-- content -->
+                                  <p>Получите товар</p>
+                              </div>
+                              <div class="clearfix colelem" id="u571-4" data-muse-uid="U571" data-muse-type="txt_frame">
+                                  <!-- content -->
+                                  <p>Заберите посылку и оплатите заказ при получении</p>
+                              </div>
+                          </div>
+                          <div class="clip_frame grpelem" id="u544" data-muse-uid="U544" data-muse-type="img_frame">
+                              <!-- image --><img class="block" id="u544_img" src="files/diesel_uber_chief_1/img/b4_3.png-crc=3818553702.png" alt="" width="95" height="95" data-muse-src="/files/diesel_uber_chief_1/img/b4_3.png?crc=3818553702" /> </div>
+                      </div>
+                      <div class="clearfix grpelem" id="u523">
+                          <!-- column -->
+                          <div class="clearfix colelem" id="u565-4" data-muse-uid="U565" data-muse-type="txt_frame">
+                              <!-- content -->
+                              <p>Подтвердите заказ</p>
+                          </div>
+                          <div class="clearfix colelem" id="u568-4" data-muse-uid="U568" data-muse-type="txt_frame">
+                              <!-- content -->
+                              <p>Наш менеджер свяжется с Вами и уточнит адрес доставки</p>
+                          </div>
+                      </div>
+                      <div class="clearfix grpelem" id="u520">
+                          <!-- column -->
+                          <div class="clearfix colelem" id="u559-4" data-muse-uid="U559" data-muse-type="txt_frame">
+                              <!-- content -->
+                              <p>Оставьте заявку</p>
+                          </div>
+                          <div class="clearfix colelem" id="u562-4" data-muse-uid="U562" data-muse-type="txt_frame">
+                              <!-- content -->
+                              <p>Позвоните нам или воспользуйтесь формой заказа и оставьте Ваше имя и телефон</p>
+                          </div>
+                      </div>
+                      <div class="clip_frame grpelem" id="u529" data-muse-uid="U529" data-muse-type="img_frame">
+                          <!-- image --><img class="block" id="u529_img" src="files/diesel_uber_chief_1/img/b4_1.png-crc=3936361270.png" alt="" width="95" height="95" data-muse-src="/files/diesel_uber_chief_1/img/b4_1.png?crc=3936361270" /> </div>
+                      <div class="clip_frame grpelem" id="u537" data-muse-uid="U537" data-muse-type="img_frame">
+                          <!-- image --><img class="block" id="u537_img" src="files/diesel_uber_chief_1/img/b4_2.png-crc=47324073.png" alt="" width="95" height="95" data-muse-src="/files/diesel_uber_chief_1/img/b4_2.png?crc=47324073" /> </div>
+                  </div>
+                  <a class="nonblock nontext anim_swing rounded-corners clearfix colelem scrollTo" id="u2539-4" href="#u677" data-href="anchor:U82:U924" data-muse-uid="U2539" data-muse-type="txt_frame">
+                      <!-- content -->
+                      <p>заказать</p>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <div class="clearfix colelem" id="u577-6" data-muse-uid="U577" data-muse-type="txt_frame">
+          <!-- content -->
+          <h2>ПРЕВОСХОДНЫЙ ПОДАРОК ДОРОГОМУ</h2>
+          <h2>ЧЕЛОВЕКУ ИЛИ САМОМУ СЕБЕ</h2> </div>
+      <div class="clearfix colelem" id="pu580">
+          <!-- group -->
+          <div class="clip_frame grpelem" id="u580" data-muse-uid="U580" data-muse-type="img_frame">
+              <!-- image --><img class="block" id="u580_img" src="files/diesel_uber_chief_1/img/img_2993dlin-crop-u580.jpg-crc=124811426.jpeg" alt="" width="503" height="465" data-muse-src="/files/diesel_uber_chief_1/img/img_2993dlin-crop-u580.jpg?crc=124811426" /> </div>
+          <div class="clearfix grpelem" id="u590-21" data-muse-uid="U590" data-muse-type="txt_frame">
+              <!-- content -->
+              <ul class="list0 nls-None" id="u590-19">
+                  <li id="u590-3"><span id="u590">Качественные часы - это</span> прекрасный подарок, пользующийся все большей популярностью во многих странах мира. Своим необычным стилем и дерзким дизайном компания оставила позади многие бренды.</li>
+                  <li id="u590-6"><span id="u590-4">Бренд Diesel</span> давно доказал, что его творения вне конкуренции, смелые и дерзкие, с урбанистическим духом.</li>
+                  <li id="u590-9"><span id="u590-7">Носить Diesel Uber Chief</span> - значит показать свою индивидуальность.</li>
+                  <li id="u590-12"><span id="u590-10">Часы этой торговой марки</span>, несомненно, являются искусством, для людей, знающих толк в часах, благодаря высокой точности, изысканности и уникальности.</li>
+                  <li id="u590-15"><span id="u590-13">Они обладают превосходным качеством</span>. Благодаря этому, ими заинтересовываются личности, обладающие решительным и победным характером.</li>
+                  <li id="u590-18"><span id="u590-16">Diesel Uber Chief</span>– лучший подарок для ценителей эксклюзивных оригинальных вещей.</li>
+              </ul>
+          </div>
+      </div>
+      <div class="clearfix colelem" id="u2554-19" data-muse-uid="U2554" data-muse-type="txt_frame">
+          <!-- content -->
+          <ul class="list0 nls-None" id="u2554-17">
+              <li id="u2554-4">Кроме своей уникальности, часы <span id="u2554-2">Diesel Uber Chief</span> могут похвастаться практичностью, надежностью и функциональностью.</li>
+              <li id="u2554-7"><span id="u2554-5">Данная модель имеет 4 часовых механизма.</span> Все они функционируют отдельно друг от друга и это дает возможность настроить время сразу по нескольким часовым поясам.</li>
+              <li id="u2554-10"><span id="u2554-8">Таким образом часы Diesel Uber Chief</span> становятся неотъемлемым аксессуаром для молодого и стильного путешественника.</li>
+              <li id="u2554-13"><span id="u2554-11">Войдя с такими часами в супермаркет или ресторан</span>, Вы гарантированно поймаете изумлённые и восторженные взгляды других людей.</li>
+              <li id="u2554-16"><span id="u2554-14">Часы Diesel Uber Chief</span> – действительно уникальная вещь, которую не сыщешь просто так в обычном магазине.</li>
+          </ul>
+      </div>
+      <div class="clearfix colelem" id="pu596">
+          <!-- group -->
+          <div class="browser_width grpelem" id="u596-bw">
+              <div class="museBGSize" id="u596">
+                  <!-- simple frame -->
+              </div>
+          </div>
+          <div class="browser_width grpelem" id="u15970-bw">
+              <div id="u15970">
+                  <!-- simple frame -->
+              </div>
+          </div>
+          <div class="clearfix grpelem" id="u607-4" data-muse-uid="U607" data-muse-type="txt_frame">
+              <!-- content -->
+              <h2>ОТЗЫВЫ ПОКУПАТЕЛЕЙ</h2> </div>
+          <div class="clearfix grpelem" id="u610-6" data-muse-uid="U610" data-muse-type="txt_frame">
+              <!-- content -->
+              <h3>Мы попросили наших покупателей поделиться</h3>
+              <h3>впечатлениями от заказа</h3> </div>
+          <div class="clearfix grpelem" id="u22760">
+              <!-- group -->
+              <div class="clearfix grpelem" id="pu613">
+                  <!-- group -->
+                  <div class="clip_frame grpelem" id="u613" data-muse-uid="U613" data-muse-type="img_frame">
+                      <!-- image --><img class="block" id="u613_img" src="files/diesel_uber_chief_1/img/o1_00.jpg-crc=466026578.jpeg" alt="" width="300" height="436" data-muse-src="/files/diesel_uber_chief_1/img/o1_00.jpg?crc=466026578" /> </div>
+                  <div class="clip_frame clearfix grpelem" id="u2631" data-muse-uid="U2631" data-muse-type="img_frame">
+                      <!-- image --><img class="position_content" id="u2631_img" src="files/diesel_uber_chief_1/img/img_32372.jpg-crc=111062979.jpeg" alt="" width="123" height="82" data-muse-src="/files/diesel_uber_chief_1/img/img_32372.jpg?crc=111062979" /> </div>
+              </div>
+              <div class="clip_frame clearfix grpelem" id="u621" data-muse-uid="U621" data-muse-type="img_frame">
+                  <!-- image --><img class="position_content" id="u621_img" src="files/diesel_uber_chief_1/img/o2.jpg-crc=3908941012.jpeg" alt="" width="300" height="439" data-muse-src="/files/diesel_uber_chief_1/img/o2.jpg?crc=3908941012" /> </div>
+              <div class="clearfix grpelem" id="pu628">
+                  <!-- group -->
+                  <div class="clip_frame clearfix grpelem" id="u628" data-muse-uid="U628" data-muse-type="img_frame">
+                      <!-- image --><img class="position_content" id="u628_img" src="files/diesel_uber_chief_1/img/o3.jpg-crc=5595353.jpeg" alt="" width="300" height="439" data-muse-src="/files/diesel_uber_chief_1/img/o3.jpg?crc=5595353" /> </div>
+                  <div class="clip_frame grpelem" id="u2641" data-muse-uid="U2641" data-muse-type="img_frame">
+                      <!-- image --><img class="block" id="u2641_img" src="files/diesel_uber_chief_1/img/img_3229-crop-u2641.jpg-crc=4253689804.jpeg" alt="" width="126" height="76" data-muse-src="/files/diesel_uber_chief_1/img/img_3229-crop-u2641.jpg?crc=4253689804" /> </div>
+              </div>
+          </div>
+      </div>
+      <div class="browser_width colelem" id="u2590-bw">
+          <div id="u2590">
+              <!-- group -->
+              <div class="clearfix" id="u2590_align_to_page">
+                  <div class="clearfix grpelem" id="u22766">
+                      <!-- group -->
+                      <div class="rounded-corners clearfix grpelem" id="u2572">
+                          <!-- column -->
+                          <div class="clip_frame clearfix colelem" id="u2578" data-muse-uid="U2578" data-muse-type="img_frame">
+                              <!-- image --><img class="position_content" id="u2578_img" src="files/diesel_uber_chief_1/img/img_34082.jpg-crc=320106337.jpeg" alt="" width="428" height="207" data-muse-src="/files/diesel_uber_chief_1/img/img_34082.jpg?crc=320106337" /> </div>
+                          <div class="clearfix colelem" id="u2584-5" data-muse-uid="U2584" data-muse-type="txt_frame">
+                              <!-- content -->
+                              <p id="u2584-2">Николай, 29 лет. г. Белгород</p>
+                              <p>&nbsp;</p>
+                          </div>
+                          <div class="clearfix colelem" id="u2587-5" data-muse-uid="U2587" data-muse-type="txt_frame">
+                              <!-- content -->
+                              <p id="u2587-2">Хорошие, красивые и стильные часы. Я такие искал в разных марках, в итоге выбрал Diesel Uber Chief, тем более очень красивые цвета. Заказал себе в подарок на день рождения. Выглядят очень солидно, сборка качественная, все механизмы работают. При встрече знакомых и друзей, все восхищенно смотрят на мои часы, и каждый хочет померить и посмотреть. А в душе приятно - завидуют. Доставили быстро за 5 дней.</p>
+                              <p>&nbsp;</p>
+                          </div>
+                      </div>
+                      <div class="rounded-corners clearfix grpelem" id="u2599">
+                          <!-- column -->
+                          <div class="position_content" id="u2599_position_content">
+                              <div class="clip_frame colelem" id="u2597" data-muse-uid="U2597" data-muse-type="img_frame">
+                                  <!-- image --><img class="block" id="u2597_img" src="files/diesel_uber_chief_1/img/img_3282-2-crop-u2597.jpg-crc=4018648209.jpeg" alt="" width="428" height="173" data-muse-src="/files/diesel_uber_chief_1/img/img_3282-2-crop-u2597.jpg?crc=4018648209" /> </div>
+                              <div class="clearfix colelem" id="u2598-5" data-muse-uid="U2598" data-muse-type="txt_frame">
+                                  <!-- content -->
+                                  <p id="u2598-2">Дмитрий, 37 лет. г. Москва</p>
+                                  <p>&nbsp;</p>
+                              </div>
+                              <div class="clearfix colelem" id="u2600-12" data-muse-uid="U2600" data-muse-type="txt_frame">
+                                  <!-- content -->
+                                  <p id="u2600-2">Часы вчера доставили. Получил именно то, что на фото, смотрятся просто умопомрачительно:</p>
+                                  <p id="u2600-4">качественно, стильно, надежно. Работаю менеджером в крупном банке.</p>
+                                  <p id="u2600-6">Часы отлично дополняют мой деловой имидж и подчеркивают статус. Отличная качественная сборка!  У вас все по честному, спасибо.</p>
+                                  <p id="u2600-8">В живую они еще круче. Благодарен!</p>
+                                  <p id="u2600-9">&nbsp;</p>
+                                  <p>&nbsp;</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="clearfix colelem" id="pu643">
+          <!-- group -->
+          <div class="browser_width grpelem" id="u643-bw">
+              <div class="museBGSize" id="u643">
+                  <!-- simple frame -->
+              </div>
+          </div>
+          <div class="browser_width grpelem" id="u15973-bw">
+              <div id="u15973">
+                  <!-- simple frame -->
+              </div>
+          </div>
+          <div class="clearfix grpelem" id="u671-8" data-muse-uid="U671" data-muse-type="txt_frame">
+              <!-- content -->
+              <h2 id="u671-2">НАСТОЯЩИЕ МУЖСКИЕ ЧАСЫ</h2>
+              <h2 id="u671-6"><span id="u671-3">DIESEL Uber Chief</span>&nbsp; <span id="u671-5">СО СКИДКОЙ 55%*</span></h2> </div>
+          <div class="clearfix grpelem" id="u674">
+              <!-- column -->
+              <div class="position_content" id="u674_position_content">
+                  <div class="clearfix colelem" id="pu680">
+                      <!-- group -->
+                      <div class="clip_frame grpelem" id="u680" data-muse-uid="U680" data-muse-type="img_frame">
+                          <!-- image --><img class="block" id="u680_img" src="files/diesel_uber_chief_1/img/flag.png-crc=434332329.png" alt="" width="329" height="97" data-muse-src="/files/diesel_uber_chief_1/img/flag.png?crc=434332329" /> </div>
+                      <div class="clearfix grpelem" id="u16981-4" data-muse-uid="U16981" data-muse-type="txt_frame">
+                          <!-- content -->
+                          <p>Только сегодня!</p>
+                      </div>
+                      <div class="clearfix grpelem" id="u711-4" data-muse-uid="U711" data-muse-type="txt_frame">
+                          <!-- content -->
+                          <p>-55%</p>
+                      </div>
+                      <div class="clearfix grpelem" id="u714-4" data-muse-uid="U714" data-muse-type="txt_frame">
+                          <!-- content -->
+                          <h2>Акция!</h2> </div>
+                  </div>
+                  <div class="clearfix colelem" id="pu695-4">
+                      <!-- group -->
+                      <div class="clearfix grpelem" id="u695-4" data-muse-uid="U695" data-muse-type="txt_frame">
+                          <!-- content -->
+                          <p>Старая цена</p>
+                      </div>
+                      <div class="clearfix grpelem" id="u696-4" data-muse-uid="U696" data-muse-type="txt_frame">
+                          <!-- content -->
+                          <p>Новая цена</p>
+                      </div>
+                  </div>
+                  <div class="clearfix colelem" id="pu690">
+                      <!-- group -->
+                      <div class="rounded-corners clearfix grpelem" id="u690">
+                          <!-- group -->
+                          <div class="clearfix grpelem" id="u692-4" data-muse-uid="U692" data-muse-type="txt_frame">
+                              <!-- content -->
+                              <p><span class="price_land_s2">6650р</span></p>
+                          </div>
+                          <div class="grpelem" id="u694">
+                              <!-- simple frame -->
+                          </div>
+                      </div>
+                      <div class="rounded-corners clearfix grpelem" id="u691">
+                          <!-- group -->
+                          <div class="clearfix grpelem" id="u693-4" data-muse-uid="U693" data-muse-type="txt_frame">
+                              <!-- content -->
+                              <p><span class="price_land_s1">2990р</span></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="clearfix colelem" id="u18997"> <div class="clearfix grpelem" id="u19000"> <div class="clearfix colelem" id="u778-4" data-muse-uid="U778" data-muse-type="txt_frame"> <p>До конца акции осталось:</p></div><div class="clearfix colelem" id="pu18958"> <div class="grpelem" id="u18958"> </div><div class="grpelem" id="u18959"> </div><div class="grpelem" id="u18960"> </div></div><div class="clearfix colelem" id="pu18955-4"> <div class="clearfix grpelem" id="u18955-4" data-muse-uid="U18955" data-muse-type="txt_frame"> <p>часов</p></div><div class="clearfix grpelem" id="u18956-4" data-muse-uid="U18956" data-muse-type="txt_frame"> <p>минут</p></div><div class="clearfix grpelem" id="u18957-4" data-muse-uid="U18957" data-muse-type="txt_frame"> <p>секунд</p></div></div></div><div class="size_fixed grpelem" id="u18973"> <ul class="cycler"> <li class="cyclerhours">00</li><li class="cyclerminutes">00</li><li class="cyclerseconds">00</li></ul> </div></div>
+              </div>
+          </div>
+          <div class="clearfix grpelem" id="u677">
+              <!-- group -->
+              <div class="clearfix grpelem" id="u861-4" data-muse-uid="U861" data-muse-type="txt_frame">
+                  <!-- content -->
+                  <p style="margin-top:15px;">* Внимание! Количество товара ограничено</p>
+              </div>
+          </div>
+          <form class="form-grp clearfix grpelem orderformcdn" id="widgetu805" action="call.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона');return false}return true;">
+              <!-- none box -->
+              <div class="fld-grp clearfix grpelem" id="widgetu813" data-required="true">
+                  <!-- none box -->
+                  <label class="fld-label actAsDiv clearfix grpelem" id="u814-4" data-muse-uid="U814" data-muse-type="txt_frame" for="widgetu813_input">
+                      <!-- content --><span class="actAsPara">Имя:</span></label> <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u815-4"><!-- content -->
+                      <input class="wrapped-input" placeholder="Ваше имя" required type="text" spellcheck="false" id="widgetu813_input" name="name" tabindex="1"/>
+                  </span>
+              </div>
+         
+              <button class="submit-btn NoWrap rounded-corners clearfix grpelem" id="u810-4" data-muse-uid="U810" data-muse-type="txt_frame" type="submit" value="Заказать сейчас" tabindex="3" style="outline:none;">
+                  <!-- content -->
+                  <div style="margin-top:-24px;height:24px;">
+                      <p>Заказать сейчас</p>
+                  </div>
+              </button>
+              <div class="fld-grp clearfix grpelem" id="widgetu817" data-required="true">
+                  <!-- none box -->
+                  <label class="fld-label actAsDiv clearfix grpelem" id="u820-4" data-muse-uid="U820" data-muse-type="txt_frame" for="widgetu817_input">
+                      <!-- content --><span class="actAsPara">Сотовый телефон:</span></label> <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u818-4"><!-- content -->
+                      <input class="wrapped-input" placeholder="Ваш телефон" type="tel" spellcheck="false" id="widgetu817_input" name="phone" required tabindex="2"/>
+                  </span>
+              </div>
+          </form>
+          <a class="anchor_item grpelem" id="zakaz"></a>
+          <div class="clip_frame clearfix grpelem" id="u720" data-muse-uid="U720" data-muse-type="img_frame">
+              <!-- image --><img class="position_content" id="u720_img" src="files/diesel_uber_chief_1/img/glavnchas330x330.png-crc=451986979.png" alt="" width="329" height="329" data-muse-src="/files/diesel_uber_chief_1/img/glavnchas330x330.png?crc=451986979" /> </div>
+          <div class="shadow rounded-corners clearfix grpelem" id="u2663-5" data-muse-uid="U2663" data-muse-type="txt_frame">
+              <!-- content -->
+              <p id="u2663">&nbsp;</p>
+              <p id="u2663-2">&nbsp;</p>
+              <p>&nbsp;</p>
+          </div>
+          <div class="clearfix grpelem" id="u2672-11" data-muse-uid="U2672" data-muse-type="txt_frame">
+              <!-- content -->
+              <p id="u2672">&nbsp;</p>
+              <p id="u2672-3">ВНИМАНИЕ! Мы работаем напрямую с производителем, гарантируем высокое качество товара и соблюдаем Ваши права потребителя.</p>
+              <p id="u2672-5">Но в Интернете есть&nbsp; сайты, продающие низкокачественные копии часов Diesel.</p>
+              <p id="u2672-7">Будьте бдительны - радость от низкой цены длится меньше, чем разочарование от низкого качества.</p>
+              <p id="u2672-8">&nbsp;</p>
+              <p id="u2672-9">&nbsp;</p>
+          </div>
+          <div class="clearfix grpelem" id="u727">
+              <!-- group -->
+              <div class="clearfix grpelem" id="u22778">
+                  <!-- group -->
+                  <div class="clip_frame grpelem" id="u739" data-muse-uid="U739" data-muse-type="img_frame">
+                      <!-- image --><img class="block" id="u739_img" src="files/diesel_uber_chief_1/img/b7_1.png-crc=118590115.png" alt="" width="50" height="50" data-muse-src="/files/diesel_uber_chief_1/img/b7_1.png?crc=118590115" /> </div>
+                  <div class="clearfix grpelem" id="u769-6" data-muse-uid="U769" data-muse-type="txt_frame">
+                      <!-- content -->
+                      <h3>ГАРАНТИРОВАННОЕ</h3>
+                      <h3>КАЧЕСТВО</h3> </div>
+                  <div class="clip_frame grpelem" id="u747" data-muse-uid="U747" data-muse-type="img_frame">
+                      <!-- image --><img class="block" id="u747_img" src="files/diesel_uber_chief_1/img/b7_2.png-crc=4012773300.png" alt="" width="50" height="50" data-muse-src="/files/diesel_uber_chief_1/img/b7_2.png?crc=4012773300" /> </div>
+                  <div class="clearfix grpelem" id="u772-4" data-muse-uid="U772" data-muse-type="txt_frame">
+                      <!-- content -->
+                      <h3>НИКАКОЙ ПРЕДОПЛАТЫ! ОПЛАТА ПРИ ПОЛУЧЕНИИ</h3> </div>
+                  <div class="clip_frame grpelem" id="u754" data-muse-uid="U754" data-muse-type="img_frame">
+                      <!-- image --><img class="block" id="u754_img" src="files/diesel_uber_chief_1/img/b7_3.png-crc=3809766982.png" alt="" width="50" height="50" data-muse-src="/files/diesel_uber_chief_1/img/b7_3.png?crc=3809766982" /> </div>
+                  <div class="clearfix grpelem" id="u775-4" data-muse-uid="U775" data-muse-type="txt_frame">
+                      <!-- content -->
+                      <h3>ДОСТАВКА В ЛЮБУЮ ТОЧКУ РОССИИ</h3> </div>
+              </div>
+          </div>
+      </div>
+      <div class="verticalspacer" data-offset-top="8789" data-content-above-spacer="8789" data-content-below-spacer="98"></div>
+      <div class="clearfix colelem" id="pu6525">
+          <!-- group -->
+          <div class="browser_width grpelem" id="u6525-bw">
+              <div id="u6525">
+                  <!-- column -->
+                  <div class="clearfix" id="u6525_align_to_page">
+                      <div class="clearfix colelem" id="pu6537-4">
+                          <!-- group -->
+                          <div class="clearfix grpelem copyright" id="u6537-4">
+                              <!-- content -->
+    <p style="text-align: center"><a style="color: inherit;" href="?page=politics" target="_blank">Политика&nbsp;конфиденциальности</a>&emsp;<a style="color: inherit;" href="?page=agreement" target="_blank">Пользовательское&nbsp;соглашение</a></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+

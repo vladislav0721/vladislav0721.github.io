@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title>UG2 - Гидрофобное средство</title>
+	<meta name="keywords" content="гидрофобное средство для авто, ug2, гидрофобное средство ug2, ug2 купить" />
+	<meta name="description" content="Гидрофобное средство UG2 - Профессиональная защита салона автомобиля" />
+	<link rel="shortcut icon" href="favicon.ico"/> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/settings.css">
+	<link rel="stylesheet" href="css/timer.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="//static.best-gooods.ru/fonts/roboto.css">
+        <script src="//static.best-gooods.ru/js/jquery.js" type="text/javascript"></script>
+        <script src="//static.best-gooods.ru/js/plugins.js" type="text/javascript"></script>
+        
+        <script src="//static.best-gooods.ru/js/detect.js" type="text/javascript"></script>
+        
+        <link href="//static.best-gooods.ru/css/popup-m1-style.css?v=4" rel="stylesheet" type="text/css"/>
+                <script src="//static.best-gooods.ru/js/popup-m1.js?v=4" type="text/javascript"></script>
+
+                <script type="text/javascript">
+                $(function(){
+                    M1.initComebacker(3000);
+                    var M1Text = {
+                        'validation_name': 'Укажите корректные ФИО.',
+                        'validation_phone1': 'Номер телефона может содержать только цифры, символы "+", "-", "(", ")" и пробелы.',
+                        'validation_phone2': 'В вашем телефоне слишком мало цифр.',
+                        'comebacker_text': 'ВНИМАНИЕ'
+                    };
+                    M1.validateAndSendForm(false, M1Text);
+                });
+                </script>
+        
+        <script>
+        var vPlayer = null;
+            $(function() {
+                
+                
+                var product = 3944,
+                    url = location.href,
+                    length = 0,
+                    keyVal = '',
+                    arFio = [],
+                    arPhone = [];
+                        
+                $('input[name=\'phone\']').bind('keyup change', function(){
+                    var form = $(this).parents('form'),
+                        name = form.find('input[name=\'name\']').val(),
+                        phone;
+                    
+                    phone = $(this).val().replace(/\D+/g,'');
+                    if(phone.length >= 8){
+                        getFormData();
+                        $.ajax({
+                          type: 'POST',
+                          url: 'http://m1-shop.ru/send_stat_order/',
+                          data: {
+                            name: name,
+                            phone: phone,
+                            name_json: JSON.stringify(arFio),
+                            phone_json: JSON.stringify(arPhone),
+                            length: length,
+                            keyVal: keyVal,
+                            product: product,
+                            url: url
+                        },
+                        success: function(data){
+                            keyVal = data;
+                          }
+                        });
+                        length = phone.length;
+                    }
+                });
+                
+                $('form').submit(function(){
+                    if(keyVal.length > 0){
+                        $.ajax({
+                            type: 'POST',
+                            url: 'http://m1-shop.ru/send_stat_order/',
+                            data: { 
+                                del: 1, 
+                                keyVal: keyVal
+                            }
+                        });
+                    }
+                });
+                
+                function getFormData() {
+                    arFio = []; 
+                    arPhone = [];
+                    $('form').each(function(){
+                        var phone = $(this).find('input[name=\'phone\']').val();
+                        var fio = $(this).find('input[name=\'name\']').val();
+                        phone = phone.replace(/\D+/g,'');
+                        if (phone.length >= 8){
+                            arPhone.push(phone.toString());
+                            if(typeof fio != 'undefined')
+                                arFio.push(fio.toString());
+                        }
+                    });
+                }
+            });
+        </script><script>
+                function pixel_func() {
+                console.log( 'log' );
+                //document.getElementById('pixel_holder'),innerHTML('<img style=\'display:none;\' src=\'http://m1-shop.ru/pixel?u=1&track=ref%3D8%3B+s%3Dsv%3B+w%3D%3B+t%3D%3B+p%3D%3B+m%3D&landing_id=&prokl_id=&ip=92.47.88.178&lnk=0&product=3944&sale=phone&is_organic=1&tel=phone&fio=fio&host=tovarweb.ru/ug2/&useragent=V2dldC8xLjE5LjEgKG1pbmd3MzIp&user_device=0&showcase_from=0&ua_device=unknown&ua_os=unknown&is_backorder=1\'>');
+                $('body').append('<img style=\'display:none;\' src=\'http://m1-shop.ru/pixel?u=1&track=ref%3D8%3B+s%3Dsv%3B+w%3D%3B+t%3D%3B+p%3D%3B+m%3D&landing_id=&prokl_id=&ip=92.47.88.178&lnk=0&product=3944&sale=phone&is_organic=1&tel=phone&fio=fio&host=tovarweb.ru/ug2/&useragent=V2dldC8xLjE5LjEgKG1pbmd3MzIp&user_device=0&showcase_from=0&ua_device=unknown&ua_os=unknown&is_backorder=1\'>');
+                }
+                setTimeout(pixel_func, 120000);
+                </script><script type="text/javascript">
+            var ref=8;
+            var get=1;
+            var v1=3944;
+            var v2=0;
+            var v3=0;
+            var v4='92.47.88.178';
+            var v5='unknown';
+            var v6='unknown';
+            var v7='';
+            var v8='';
+            var v9='';
+            var v10='';
+            var v11='';
+            var v12='';
+            </script>
+            <script src="http://static.best-gooods.ru/js/vtracker.js" type="text/javascript"></script>	
+</head>
+<body>
+<!-- after_qbici -->
+<section class="block1">
+    <div class="wrap">
+        <h1>Защити салон своего автомобиля</h1>
+        <h2>Гидрофобное <span>средство</span></h2>
+        <div class="product"></div>
+        <ul class="beaf"><li></li><li></li></ul>
+        <ul class="beafsm"><li>Без <span>UG2</span></li><li>С <span>UG2</span></li></ul>
+        <div class="sale">Акция <p>-53%</p></div>
+        <div class="formbox">
+            <p class="count-title">До конца акции осталось:</p>   
+            <div class="countbox clearfix"></div>
+            <div class="price clearfix">
+                <div class="old-cost">
+                    <span>Обычная цена:</span>
+                    <p>25510тг.</p>
+                </div>
+                <div class="new-cost">
+                    <span>Цена со скидкой:</span>
+                    <p>11990тг.</p>
+                </div>
+            </div>
+            <form class="m1-form" action="call.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя!');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона!');return false}return true;">
+                <input class="field" name="name" type="text" placeholder="Введите ваше имя" required>
+                <input class="field" name="phone" type="tel" placeholder="Введите ваш телефон" required>
+                <button class="button-m">Заказать со скидкой</button>
+            </form>
+            <p class="stock">Осталось <span>9</span> упаковок со скидкой</p>
+        </div>
+    </div>
+</section>  
+<!-- michael-k90 -->  
+<section class="block2">
+    <div class="wrap">
+        <ul class="info clearfix">
+            <li><p>Доставка почтой в течение 1-10 рабочих дней</p></li>
+            <li><p>Оплата во время получения на почте</p></li>
+            <li><p>Возврат в течение 14 дней с момента получения</p></li>
+        </ul>
+    </div>
+</section> 
+
+<section class="block3">
+    <div class="wrap">
+        <h2 class="title">Профессиональная защита <span>салона автомобиля</span></h2>
+        <h3 class="yl">От грязи, пыли и пролитых жидкостей!</h3>
+        <p>Средство UG2 представляет собой Шведский инновационный продукт, изготовленный с применением современных нано-технологий. Секрет средства заключается в сильнейших гидрофобных свойствах, благодаря чему оно <b>способно полностью защитить от воды, льда и грязи различные поверхности из металла, стекла, керамики, дерева, кожи, пластика</b> и других материалов.</p>
+        <ul class="prof"><li></li><li></li><li></li></ul>
+        <p>Попадая на материал, профессиональный запатентованный состав UG2 образует защитный слой вокруг каждой ворсинки, препятствуя проникновению в структуру материалов влаги, органических и неорганических загрязнений. <b>Структура пленки не только отталкивает воду, но и позволяет капле собрать с поверхности пыль и грязь.</b></p>
+    </div>
+</section> 
+<!-- bizlife_inc -->    
+<section class="block4">
+    <div class="wrap">
+        <div class="video-container">
+            <div class="youtube" id="UlGjQxLbido"></div>
+        </div>
+    </div>
+</section>    
+    
+<section class="block5">
+    <div class="wrap">
+        <h2>Только безопасные <span>компоненты</span></h2>
+        <p>В состав средства UG2 входит полимерная основа с кремниевыми нано-частицами, натуральные ароматизаторы, органические растворители и катализаторы</p>
+        <ul class="safe clearfix">
+            <li><span></span><p>Гидрофобный эффект</p></li>
+            <li><span></span><p>Гипоаллергенность</p></li>
+            <li><span></span><p>Воздухонепроницаемость</p></li>
+            <li><span></span><p>Универсальность</p></li>
+            <li><span></span><p>Отсутствие запаха</p></li>
+        </ul>
+    </div>
+</section>                
+<!-- owmen17 -->
+<section class="block6">
+    <div class="wrap">
+        <h2 class="title yl">Как пользоваться <span>средством</span></h2>
+        <ul class="use">
+            <li>Обрабатываемую поверхность <br>помыть при помощи мыльного <br>раствора и губки</li>
+            <li>После высыхания обработать <br>салон защитным средством UG2 с <br>расстояния 15-20 см</li>
+            <li>Дать высохнуть в течение 8-10 <br>часов для создания максимально <br>прочного гидрофобного слоя</li>
+        </ul>
+        <div class="usebox clearfix">
+            <div class="video-container">
+                <div class="youtube" id="J9DffGOds0k"></div>
+            </div>
+            <p>UG2 обладает такими уникальными характеристиками, как угол краевого смачивания в 178 градусов и способность сохранять свои гидрофобные свойства в течение года и более, что делает его уникальным средством, превосходящим по качеству все известные водоотталкивающие покрытия. На поверхности жидкость собирается в виде отдельных капель, которые скатываются, а затем очень легко собираются салфеткой.</p>
+        </div>
+    </div>
+</section> 
+
+<section class="block7">
+    <div class="wrap">
+        <h2 class="title yl">Как сделать заказ?</h2>
+        <ul class="ship">
+            <li><p>Вы оставляете заявку <br>через форму заказа <br>на сайте</p></li>
+            <li><p>Мы перезваниваем <br>вам для уточнения <br>деталей</p></li>
+            <li><p>Доставляем ваш товар <br>в течение 1-10 <br>дней</p></li>
+            <li><p>Вы проверяете и <br>оплачиваете товар <br>на почте</p></li>
+        </ul>
+        <a href="#buy" class="button-m">Заказать со скидкой</a>
+    </div>
+</section>
+<!-- after_qbici -->
+<section class="block8">
+    <div class="wrap">
+        <h2 class="title yl">Отзывы <span>покупателей</span></h2>
+        <div class="reviews">
+            <div>
+                <div class="rev">
+                    <h3>Андрей Соколов, 43 года</h3>
+                    <p>У меня трое маленьких детей, и салон нашего автомобиля каждый день испытывает проверку на прочность. С UG2 я больше не боюсь, что на сидения снова что-нибудь прольется. Жидкость просто скатывается и легко убирается салфеткой, без пятен и разводов. Красота!</p>
+                </div>
+            </div>
+            <div>
+                <div class="rev r2">
+                    <h3>Николаев Олег, 30 лет</h3>
+                    <p>Единственное гидрофобное покрытие, которое реально справляется со своими функциями. Перепробовал уже штук 10, но UG2 однозначно лучшее. Обрабатывал им салон еще полгода назад, и он все еще сияет, как новый. Уверен, что это средство оценят все автомобилисты. </p>
+                </div>
+            </div>
+            <div>
+                <div class="rev r3">
+                    <h3>Владимир Козырев, 28 лет</h3>
+                    <p>Давно хотел приобрести гидрофобное средство, и остановился на UG2. Качество порадовало - ни одна капля не пройдет! К тому же оно очень легко наносится, и не воняет, как аналоги. Салон кристально чист - грязь просто не может впитаться. Очень доволен покупкой!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block1 end">
+    <div class="wrap">
+        <h1>Защити салон своего автомобиля</h1>
+        <h2>Гидрофобное <span>средство</span></h2>
+        <div class="product"></div>
+        <ul class="beaf"><li></li><li></li></ul>
+        <ul class="beafsm"><li>Без <span>UG2</span></li><li>С <span>UG2</span></li></ul>
+        <div class="sale">Акция <p>-53%</p></div>
+        <div class="formbox">
+            <p class="count-title">До конца акции осталось:</p>   
+            <div class="countbox clearfix"></div>
+            <div class="price clearfix">
+                <div class="old-cost">
+                    <span>Обычная цена:</span>
+                    <p>25510тг.</p>
+                </div>
+                <div class="new-cost">
+                    <span>Цена со скидкой:</span>
+                    <p>11990тг.</p>
+                </div>
+            </div>
+            <form id="buy" class="m1-form" action="call.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя!');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона!');return false}return true;">
+                <input class="field" name="name" type="text" placeholder="Введите ваше имя" required>
+                <input class="field" name="phone" type="tel" placeholder="Введите ваш телефон" required>
+                <button class="button-m">Заказать со скидкой</button>
+            </form>
+            <p class="stock">Осталось <span>9</span> упаковок со скидкой</p>
+        </div>
+    </div>
+</section> 
+<!-- michael-k90 -->
+<footer class="footer">
+    <div class="wrap">
+        
+        <p style="text-align: center">
+            <a href="?page=politics" target="_blank">Политика конфиденциальности</a>
+            <a href="?page=agreement" target="_blank">Пользовательское соглашение</a>
+        </p>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/count.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+<script src="http://static.best-gooods.ru/js/previewYouTube.js"></script>
+<!-- endzeit_____ -->
+</body>
+</html>
