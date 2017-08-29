@@ -1,0 +1,292 @@
+//ЦВЕТА
+
+@base-green: #13bf78;
+@base-red: #db2c4d;
+@base-white: #ffffff;
+@base-blue:;
+@base-black:;
+
+//ЦВЕТА
+
+
+//ШРИФТЫ
+
+@font-face {
+    font-family: 'MagnoliaScript';
+    src: url('../fonts/MagnoliaScript.eot');
+    src: url('../fonts/MagnoliaScript.eot') format('embedded-opentype'),
+         url('../fonts/MagnoliaScript.woff2') format('woff2'),
+         url('../fonts/MagnoliaScript.woff') format('woff'),
+         url('../fonts/MagnoliaScript.ttf') format('truetype'),
+         url('../fonts/MagnoliaScript.svg#MagnoliaScript') format('svg');
+}
+
+.magnolia {
+	font-family: 'MagnoliaScript', sans-serif;
+}
+
+.r300 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
+.r400 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+
+.r700 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+.r900 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+}
+
+
+
+
+
+//ШРИФТЫ
+
+//МЕЙН БЛОК
+
+
+button, input, {
+	border: none;
+	outline: none;
+}
+
+a, a:hover, a:focus a:before {
+	text-decoration: none;
+}
+
+.main-wrapper {
+	height: 60px;
+	background-color: @base-white;
+	border-bottom: solid 3px #848484;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+.logo {
+	font-size: 20px;
+	margin: auto;
+	text-align: center;
+	line-height: 60px;
+}
+
+
+.top-nav {
+	display: inline-block;
+}
+
+.main-nav {
+	padding-right: 20px;
+	color: #848484;
+	font-size: 15px;
+}
+
+.main-nav:hover {
+	color: darken(#848484, 50%);
+	transition: 0.4s;
+}
+
+.navig {
+	margin-right: 5%;
+	line-height: 60px;
+}
+
+.main-screen {
+	background-image: url(../img/bg.jpg);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	min-height: 600px;
+	max-height: 850;
+}
+
+/*
+form {
+	float: right;
+	margin-top: 38%;
+	margin-right: 18%;
+	height: 390px;
+	width: 290px;
+	background-color: @base-white;
+}
+*/
+
+.row {
+  margin-right: 0px;
+}
+
+
+#application {
+	text-align: center;
+	font-size: 14px;
+	background-color: rgba(1,1,1,0);
+	width: 550px;
+	margin-top: 5%;
+	margin: 0 auto;
+	padding: 27px 16px;
+}
+
+
+#zayavkaName, #applicationTelephone {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 19px;
+	border: 2px solid @base-red;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: rgba(1,1,1,0);
+	transition: 1s;
+	color: @base-white;
+}
+
+#zayavkaName::-webkit-input-placeholder { 
+	color: #dcdcdc; 
+}
+
+#applicationTelephone::-webkit-input-placeholder { 
+	color: #dcdcdc; 
+}
+
+#zayavkaName {
+	margin-right: 2%;
+}
+
+#applicationTelephone {
+	margin-left: 2%;
+}
+
+h1 {
+	margin-top: 30%;
+	color: @base-white;
+	text-align: center;
+	font-size: 40px;
+	.magnolia
+}
+
+.p-utp {
+	margin-top: 5%;
+	color: @base-white;
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+	.r300
+}
+
+/* Rectangle Out */
+.hvr-rectangle-out {
+	padding: 8px 27px;
+	position: relative;
+	font-size: 26px;
+	margin: 0 auto;
+	display: block;
+/*  vertical-align: middle;*/
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: @base-red;
+	color: white;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-rectangle-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: darken(@base-red, 15%);
+	
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+  color: @base-white;
+}
+.hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+h3 {
+	text-transform: uppercase;
+	.r900;
+	font-size: 40px;
+	margin-bottom: ;
+	text-align: right;
+	margin: 0;
+}
+
+.fluid {
+	margin: 0;
+	padding: 0;
+}
+
+.broken {
+
+}
+
+.left {
+	background-image: url(../img/broken_noise.png);
+	height: 400px;
+	background-size: cover;
+	text-align: center;
+}
+	
+.heart {
+	text-align: right;
+	.r300;
+	font-size: 20px;
+	
+}
+
+.mastername {
+	text-align: left;
+	.r700;
+	font-size: 25px;
+	color: @base-white;
+	padding: 20px 139px 0px 139px;
+}
+
+
+
+.aboutmaster {
+	text-align: left;
+	.r300;
+	font-size: 14px;
+	color: @base-white;
+	padding: 20px 139px 20px 139px;
+}
+
+.right {
+	background-image: url(../img/Picture-122.jpg);
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.nomarg {
+	margin: 0;
+	padding: 0;
+}
+
