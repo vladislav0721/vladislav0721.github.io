@@ -1,9 +1,8 @@
 <?php
-$mainform = $_POST['Заявка эскиз'];
+$mainform = $_POST['Тема'];
 $name = $_POST['Имя'];
 $phone = $_POST['Телефон'];
 $message = $_POST['Сообщение'];
-$consultation = $_POST['Консультация'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -14,12 +13,12 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'arman_kas96';                 // SMTP username
+$mail->Username = 'karl.tatushkin.98';                 // SMTP username
 $mail->Password = '12345a';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
 
-$mail->setFrom('arman_kas96@mail.ru');
+$mail->setFrom('karl.tatushkin.98@mail.ru');
 $mail->addAddress('3dspirit@mail.ru');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
@@ -29,8 +28,8 @@ $mail->addAddress('3dspirit@mail.ru');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с сайта';
-$mail->Body    = 'Имя пользователя:';
+$mail->Subject = "{$_POST['Тема']}";
+$mail->Body = " <b>Имя:</b> {$_POST['Имя']} <br> <b>Телефон:</b> {$_POST['Телефон']} <br> <br> {$_POST['Сообщение']} ";
 $mail->AltBody = 'Это сообщение в формате plain text';
 
 if(!$mail->send()) {

@@ -342,42 +342,42 @@ h5 {
 
 .left {
 	background-image: url(../img/broken_noise.png);
-	height: 400px;
+	height: 50%;
 	background-size: cover;
 	text-align: center;
 }
 
 .right {
 	background-image: url(../img/Picture-122.jpg);
-	height: 400px;
+	height: 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .left-2 {
 	background-image: url(../img/Picture-123.jpg);
-	height: 400px;
+	height: 50%;
 	background-size: cover;
 	text-align: center;
 }
 
 .right-2 {
 	background-image: url(../img/broken_light.png);
-	height: 400px;
+	height: 50%;
 	background-size: cover;
 	text-align: center;
 }
 
 .left-3{
 	background-image: url(../img/broken_noise.png);
-	height: 400px;
+	height: 50%;
 	background-size: cover;
 	text-align: center;
 }
 
 .right-3 {
 	background-image: url(../img/Picture-122.jpg);
-	height: 400px;
+	height: 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -494,16 +494,16 @@ h5 {
 }
 
 .feedback-box-right {
-	height: 200px;
-	width: 100%;
+	padding-bottom: 15px;
+	width: 80%;
 	background-color: @base-black;
 	position: relative;
 	padding-left: 50px;
 }
 
 .feedback-box-left {
-	height: 200px;
-	width: 100%;
+	padding-bottom: 15px;
+	width: 80%;
 	background-color: @base-black;
 	position: relative;
 }
@@ -820,10 +820,98 @@ h5 {
 }
 
 
+// Очень малые устройства (портрет телефонов, менее 544px)  
+@media (max-width: 543px) {
+	#zayavkaName {
+    margin-right: 0 !important;
+		font-size: 24px;
+	}
+	#applicationTelephone {
+    margin-left: 0 !important;
+		font-size: 24px;
+	}
+	h1 {
+    margin-top: 44%;
+    font-size: 33px;
+	}
+	.main-wrapper {
+		display: none;
+	}
+	.p-utp {
+    margin-top: 11%;
+	}
+	h2 {
+    font-size: 30px;
+    margin: 8% 0 3% 0;
+	}
+	h6 {
+    font-size: 30px;
+    margin: 11% 0 0;
+	}
+	h3 {
+    font-size: 30px;
+    margin: 7% 0 0;
+	}
+	h5 {
+    font-size: 27px;
+    margin: 7% 0 0;
+	}
+	.contacts {
+    font-size: 30px;
+    margin: 0% 0 12px;
+	}
+	.aboutmaster {
+    font-size: 12px;
+    padding: 0 8% 5% 14%;
+	}
+	.mastername {
+    font-size: 21px;
+    padding: 5% 0% 2% 14%;
+	}
+	.feedback-img-left {
+    top: 21%;
+    left: -32%;
+	}
+	.feedback-img-right {
+    top: 21%;
+    left: 79%;
+	}
+	.feed-back-text {
+    padding: 5px 20px 0px 68px;
+    margin: 0;
+    font-size: 12;
+	}
+	.feed-back-text-r {
+    padding: 5px 65px 0px 0px;
+    margin: 0;
+    font-size: 12px;
+	}
+	.feedback-box-left {
+    margin-bottom: 11%;
+	}
+	.feed-back-name {
+    padding: 19px 25px 0px 68px;
+	}
+	.feedback-row {
+    margin-top: 17px;
+	}
+	.feedback2-row {
+    margin-top: 39px;
+	}
+	.uslugi {
+    margin-bottom: 5%;
+	}
+}
 
+// Небольших устройств (альбомной телефоны, 544px и вверх)  
+@media (min-width: 544px) and (max-width: 767px) {
+	
+}
 
-
-
+// Устройствах среднего (планшеты, 768px и выше)  
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
 
 
 
