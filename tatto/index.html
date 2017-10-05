@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link  href="fotorama/fotorama.css" rel="stylesheet">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -60,7 +61,7 @@
 								<input type="hidden" name="Тема" value="Заяка эскиз">
 								<input name="Имя" id="zayavkaName" maxlength="20" placeholder="Введите имя" required />
 								<input name="Телефон" type="Tel" id="applicationTelephone" maxlength="14" placeholder="Введите телефон" required/>
-								<button class="hvr-rectangle-out">ХОЧУ TATTO</button>
+								<button class="hvr-rectangle-out" type="submit">ХОЧУ TATTO</button>
 							</form>
 						</div>
 					</div>
@@ -201,7 +202,17 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-6 nomarg left-mobile-1"></div>
+					<div class="col-sm-6 nomarg left-mobile-1">
+						<div class="name-img">
+							<p class="overlay-image-name">Иванов Иван</p>
+						</div>
+						<div class="overlay-image"></div>
+						<div class="overlay-social">
+							<p class="im-socials">Я в социальных сетях</p>
+							<a href=""><i class="fa fa-vk"></i></a>
+							<a href=""><i class="fa fa-instagram"></i></a>
+						</div>
+					</div>
 					<div class="col-sm-6 nomarg">
 						<div class="right-mobile-1">
 							<p class="mastername">О мастере</p>
@@ -210,7 +221,17 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-6 nomarg left-mobile-2"></div>
+					<div class="col-sm-6 nomarg left-mobile-2">
+						<div class="name-img">
+							<p class="overlay-image-name">Иванов Иван</p>
+						</div>
+						<div class="overlay-image"></div>
+						<div class="overlay-social">
+							<p class="im-socials">Я в социальных сетях</p>
+							<a href=""><i class="fa fa-vk"></i></a>
+							<a href=""><i class="fa fa-instagram"></i></a>
+						</div>
+					</div>
 					<div class="col-sm-6 nomarg">
 						<div class="right-mobile-2">
 							<p class="mastername">О мастере</p>
@@ -219,7 +240,17 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-6 nomarg left-mobile-3"></div>
+					<div class="col-sm-6 nomarg left-mobile-3">
+						<div class="name-img">
+							<p class="overlay-image-name">Иванов Иван</p>
+						</div>
+						<div class="overlay-image"></div>
+						<div class="overlay-social">
+							<p class="im-socials">Я в социальных сетях</p>
+							<a href=""><i class="fa fa-vk"></i></a>
+							<a href=""><i class="fa fa-instagram"></i></a>
+						</div>
+					</div>
 					<div class="col-sm-6 nomarg">
 						<div class="right-mobile-3">
 							<p class="mastername">О мастере</p>
@@ -321,7 +352,7 @@
 												// Необходимо указать данный тип макета. Показываем что это изображение.
 												iconLayout: 'default#image',
 												// Своё изображение иконки метки. Указываем путь до картинки
-												iconImageHref: 'img/map_logo.png',
+												iconImageHref: '#',
 												// Размеры метки. 
 												iconImageSize: [336, 267],
 												// Смещение левого верхнего угла иконки относительно её "ножки" (точки привязки).
@@ -357,21 +388,17 @@
    	</div>
    	
    <!--	modals-->
-   <div id="popup1" class="popup-overlay">
-			<div class="popup">
-				<a class="popup-close" href="#close">&times;</a>
-			</div>
-   </div>
    <div id="popup2" class="popup-overlay">
 			<div class="popup">
-				<a class="popup-close" href="#close">&times;</a>
+				
 				<p class="popup-header">Задайте Ваш вопрос</p>
 				<form id="popup-form">
+					<a class="popup-close" href="#close">&times;</a>
 					<input type="hidden" name="Тема" value="Консультация">
 					<input name="Имя" id="popup-name" maxlength="20" placeholder="Введите имя" required />
 					<input name="Телефон" type="Tel" id="popup-telephone" maxlength="14" placeholder="Введите телефон" required/>
 					<textarea name="Сообщение" id="popup-text-area"  rows="6" placeholder="Введите Ваш вопрос" required></textarea>
-					<button class="hvr-rectangle-out popup-btn">Отправить</button>
+					<button class="hvr-rectangle-out popup-btn" type="submit">Отправить</button>
 				</form>
 			</div>
    </div>	
@@ -405,11 +432,11 @@
    	
    	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="fotorama/fotorama.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-		<script src="js/js.js"></script>
 		<script type="text/javascript">
 		 $(document).ready(function(){
 				$("#menu").on("click","a", function (event) {
@@ -420,7 +447,33 @@
 				});
 		});
 		</script>
-		<script>
+		<script type="text/javascript">
+			$("form").submit(function() { //Change
+				var th = $(this);
+				$.ajax({
+					type: "POST",
+					url: "mail.php", //Change
+					data: th.serialize()
+				}).done(function() {
+					$(".popup-overlay").hide();
+					swal({
+					title: 'Успешно отправлено',
+					text: 'Наш менеджер свяжется с Вами в течении часа',
+					type: 'success',
+					confirmButtonText: 'Жду!',
+					confirmButtonColor: '#db2c4d'	
+				})
+					setTimeout(function() {
+						// Done Functions
+					
+					th.trigger("reset");
+					
+					}, 1000);
+				});
+				return false;
+			});
+		</script>
+<!--		<script type="text/javascript">
 			$(document).ready(function() {
 			$("form").submit(function() {
 				$.ajax({
@@ -429,14 +482,13 @@
 					data: $(this).serialize()
 				}).done(function() {
 					$(this).find("input").val("");
-					alert("Спасибо за заявку! За вами уже выехали.");
 					$("form").trigger("reset");
-					/*$("form").trigger("close");*/
+					
 				});
 				return false;
 			});
+		});		
+		</script>-->
 
-		});
-		</script>
   </body>
 </html>
