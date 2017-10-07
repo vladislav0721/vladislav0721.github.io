@@ -44,10 +44,57 @@
 	font-weight: 900;
 }
 
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url(../img/broken_noise.png);
+	z-index: 3000;
+	transition: 1s all;
+	opacity: 1;
+	visibility: visible;
+}
 
+.loader {
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	border: 5px solid @base-white;
+	border-radius: 50%;
+	border-top-width: ;
+	border-top-color: @base-red;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	animation: 1s spin infinite linear;
+	&-logo {
+		position: absolute;
+		z-index: 3001;
+		top: 30%;
+		width: 100%;
+		text-align: center;
+		color: @base-white;
+		.r700;
+		font-size: 40px;
+	}
+}
 
+.done {
+	visibility: hidden;
+	opacity: 0;
+}
 
-
+@keyframes spin {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
 //ШРИФТЫ
 
 //МЕЙН БЛОК
@@ -862,6 +909,7 @@ h5 {
 	position: fixed;
 	top: 10%;
 	left: 50%;
+	z-index: 1000;
 	margin-left: -200px;
 	&-politics {
 		width: 50%;
@@ -922,6 +970,7 @@ h5 {
 	margin-top: 5%;
 	margin: 0 auto;
 	padding: 27px 16px;
+
 }
 
 
@@ -1205,7 +1254,7 @@ h5 {
 	
 	
 	
-	.right-mobile-1 {
+.right-mobile-1 {
 	display: block;
 	background-image: url(../img/broken_noise.png);
 	height: auto;
@@ -1273,7 +1322,7 @@ h5 {
 	}
 	.logo-demo {
 		display: block;
-		margin-top: 30%;
+		margin-top: 20%;
 	}
 	.img-uslugi {
 		height: auto;
@@ -1743,7 +1792,7 @@ h5 {
 	}
 	.logo-demo {
 		display: block;
-		margin-top: 30%;
+		margin-top: 20%;
 	}
 	.feed-message-img {
     width: 130px;
